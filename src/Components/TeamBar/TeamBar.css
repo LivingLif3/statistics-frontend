@@ -1,0 +1,81 @@
+
+.result_tb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    height: 100px;
+    background-color: rgb(28, 30, 33);
+    margin-bottom: 20px;
+    padding: 10px;
+    
+    border-radius: 20px;
+
+    color: rgb(224, 224, 224)
+    
+}
+
+.avatar_tb{
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+.info_tb{
+    text-align: center;
+}
+
+
+.surname_tb, .name_tb{
+    font-size: 20px;
+    padding: 3px;
+    
+    font-weight: 700;
+}
+
+.lineOne_tb{
+    margin-top: 5px;
+}
+
+.lable_tb{
+    margin-right: 3px;
+}
+
+.age_tb{
+    font-weight: 700;
+    font-size: 18px;
+}
+.id_tb{
+    font-size: 23px;
+}
+
+.button_tb{
+    padding: 5px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 5px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 18px;
+}
+
+.button_tb:first-child{
+    margin-right: 15px;
+}
+
+.button_tb:first-child:hover{
+    background-color: #00A550;
+}
+
+.button_tb:last-child:hover{
+    background-color: #CC3333;
+}
+
+.activeBar {
+    background-color: #00A550;
+}

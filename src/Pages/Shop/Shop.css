@@ -1,0 +1,293 @@
+
+
+
+.page_SH{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(191, 236, 253); */
+    /* background-color: rgb(233, 186, 237); */
+    font-family: 'Mulish', sans-serif;
+}
+
+.page1_SH{
+    width: 100%;
+
+}
+
+.header_SH{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+
+.linkDiv_SH{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.nav_SH{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(224, 224, 224);
+    transition: color .1 linear;
+
+    text-decoration: none;
+    
+    margin: 12px 50px;
+    
+    transition: color .1s  linear;
+}
+
+.nav_SH::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: rgb(28, 30, 33);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+
+    transition: opacity .1s linear;
+}
+
+.nav_SH:hover{
+    color: rgb(28, 30, 33)
+}
+
+.nav_SH:hover::after{
+    opacity: 1;
+
+}
+
+.Ssplitter_SH{
+    width: 3px;
+    height: 120px;
+    background-color: rgb(23,23,23);
+    border-radius: 18px;
+}
+
+.ld_SH{
+    padding-right: 140px;
+    padding-top: 46px;
+}
+
+.l_SH{
+    text-align: right;
+        
+}
+
+
+.mPage_SH{
+    padding: 0 20px;
+}
+
+
+.chest_SH{
+    font-family: 'Anek Malayalam', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 0;
+}
+
+
+
+.head_SH{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    right: 25px;
+    bottom: -120px;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, .3);
+}
+
+
+.headText_SH{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 23px;
+    
+}
+
+
+.packName_SH{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+.price_SH{
+    text-align: center;
+    padding-top: 23px;
+    padding-left: 2px;
+    line-height: 23px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.month_SH{
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.Body_SH{
+    position: inherit;
+    width: 250px;
+    height: 600px;
+    padding-top: 140px;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, .3);
+}
+
+.ulDiv_SH{
+    padding-left: 20px;
+}
+
+.pointsOfPackage_SH{
+    list-style: none;
+    list-style-position: outside;
+    line-height: 40px;
+}
+
+.pointsOfPackage_SH li::before{
+    list-style-position: outside;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #C0C0C0;
+    content: "\2714";
+}
+
+.foot_SH{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    right: 25px;
+    top: -120px;
+
+    text-align: center;
+    padding-top: 45px;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, .3);
+}
+
+.purchase_SH{
+    cursor: pointer;
+    font-size: 25px;    
+    color: rgba(255, 255, 255, 1);
+    border: 0;
+    border-radius: 20px;
+    padding: 5px  50px;
+}
+
+
+.f_SH{
+    background-color: rgb(4, 26, 238);
+}
+.fh_SH:hover{
+    background-color: rgb(112, 27, 235);
+}
+
+.s_SH{
+    background-color: rgb(112, 27, 235);
+}
+.sh_SH:hover{
+    background-color: rgb(225, 8, 114);
+}
+
+.th_SH{
+    background-color: rgb(225, 8, 114);
+}
+.thh_SH:hover{
+    background-color: rgb(250, 114, 66);
+}
+
+.fo_SH{
+    background-color: rgb(250, 114, 66);
+}
+.foh_SH:hover{
+    background-color: rgb(4, 26, 238);
+}
+
+.box_SH{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 50px;
+}
+
+
+.Box_SH{
+    width: 300px;
+    height: 600px;
+    border: 1px solid rgb(23,23,23);
+    border-radius: 18px;
+    box-shadow: 4px 5px 5px rgb(23,23,23);
+}
+
+.w_SH{
+    color: rgba(255, 255, 255, 1);
+}
+
+.w-b-b_SH{
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+.Ddivider_SH{
+    width: 120px;
+    height: 3px;
+    border-radius: 18px;
+
+    background-color: rgb(23,23,23);
+
+    margin: 60px auto;
+    margin-bottom: 0;
+}
+
+.Ddivider_SH:hover{
+    background-color: rgb(34,44,148);
+}
+
+
+.line_SH{
+    margin-top: 60px;
+}
+
+.texterDiv_SH{
+    padding-left: 140px;
+    text-align: left;
+}
+
+
+.texter_SH{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.texting_SH{
+    margin-top: 20px;
+    font-size: 20px;
+}
+

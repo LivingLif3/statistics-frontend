@@ -1,0 +1,504 @@
+.cardDiv_Cab{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.card_Cab{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    perspective: 1000px;
+}
+
+.card_Cab:hover .front_Cab{
+    transition-delay: 1s;
+    transform: rotateY(180deg);
+}
+
+.card_Cab:hover .back_Cab{
+    transition-delay: 1s;
+    transform: rotateY(360deg);
+}
+
+.front_Cab, .back_Cab{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid rgb(28, 30, 33);
+}
+
+.front_Cab, .back_Cab{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.front_Cab{
+    /* background: #1CD3A2; */
+    background: #111;
+}
+.back_Cab{
+    /* background-color: rgb(56, 56, 56) ; */
+    /* background: #121910; */
+    background: #111;
+    transform: rotateY(180deg);
+    color: rgb(224, 224, 224);
+}
+
+/* Лицевая сторона */
+.curveOne_ocf{
+    position: absolute;
+    overflow: hidden;
+    border-radius: 16px 0 0 0 ;
+}
+
+.curveTwo_ocf{
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.curveThree_ocf{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 0 16px;
+}
+
+.photoHolder_ocf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 184.5px;
+    height: 195px;
+    left: 83.03px;
+    top: 27.01px;
+    /* background-color: aqua; */
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.photo_ocf{
+    
+    padding: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.pointe_ocf{
+    position: absolute;
+    width: 48px;
+    height: 39px;
+}
+
+.upper_ocf{
+    top: 0;
+}
+
+.bottom_ocf{
+    top: 160px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.side_ocf{
+    width: 30px;
+    height: 30px;
+}
+
+.leftTop_ocf{
+    left: 0;
+    top: 25%
+}
+
+.leftBottom_ocf{
+    left: 0;
+    bottom: 20%;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.rightTop_ocf{
+    right: 0;
+    top: 25%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.rightBottom_ocf{
+    right: 0;
+    bottom: 20%;
+    transform: rotate(-180deg);
+}
+
+.photoDiv_ocf{
+    position: absolute;
+    width: 166.37px;
+    height: 154px;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+
+.infoPartHolder_ocf{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    top: 250.01px;
+    border-radius: 40px 40px 20px 20px;
+
+    background: #303030;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.textOfnameHolder_ocf{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    padding: 2.5px;
+
+    color: #FFFFFF;
+}
+
+.postHolder_ocf{
+    text-align: center;
+}
+
+.post_ocf{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.devider_ocf{
+    width: 238px;
+    height: 0px;
+    margin-top: 5px;
+    margin-bottom: 23px;
+
+    border: 1px solid #E2611D;
+}
+
+.field_ocf{
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 22px;
+
+    padding: 6px;
+
+    margin-bottom: 16px;
+
+    background: #2B2B2B;
+    box-shadow: -1px -1px 10px rgba(188, 188, 188, 0.15), 1px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+}
+
+
+.textOfFields_ocf, .unitsOfMeasure_ocf, .weightResult_ocf, .hieghtResult_ocf, .ageResult_ocf, .id_ocf{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.065em;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+
+    color: #FFFFFF;
+}
+
+.unitsOfMeasure_ocf{
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Обратная сторона карты */
+
+.photoDiv_ocb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    max-width: 180px;
+    max-height: 180px;
+    padding-top: 5px;
+}
+
+.photo_po{
+    
+    padding: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.curveOne_ocb{
+    position: absolute;
+    overflow: hidden;
+    border-radius: 16px 0 0 0 ;
+}
+
+.curveTwo_ocb{
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.curveThree_ocb{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 0 16px;
+}
+
+.photoHolder_po{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 184.5px;
+    height: 195px;
+    left: 83.03px;
+    top: 27.01px;
+    /* background-color: aqua; */
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.pointe_po{
+    position: absolute;
+    width: 48px;
+    height: 39px;
+}
+
+.upper_po{
+    top: 0;
+}
+
+.bottom_po{
+    top: 160px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.side_po{
+    width: 30px;
+    height: 30px;
+}
+
+.leftTop_po{
+    left: 0;
+    top: 25%
+}
+
+.leftBottom_po{
+    left: 0;
+    bottom: 20%;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.rightTop_po{
+    right: 0;
+    top: 25%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.rightBottom_po{
+    right: 0;
+    bottom: 20%;
+    transform: rotate(-180deg);
+}
+
+.photoDiv_po{
+    position: absolute;
+    width: 166.37px;
+    height: 154px;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+
+.infoPartHolder_ocb{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    left: 0px;
+    bottom: 0;
+    border-radius: 40px 40px 20px 20px;
+
+    background: #303030;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.textOfnameHolder_ocb{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    padding: 2.5px;
+
+    color: #FFFFFF;
+}
+
+.postHolder_ocb{
+    text-align: center;
+}
+
+.post_ocb{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.devider_ocb{
+    width: 238px;
+    height: 0px;
+    margin-top: 5px;
+    margin-bottom: 23px;
+
+    border: 1px solid #E2611D;
+}
+
+.email_ocb{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.065em;
+
+    color: #FFFFFF;
+}
+
+.passwordChangerHolder_ocb{
+    margin-top: 15px;
+}
+
+.passwordChanger_ocb{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+    letter-spacing: 0.065em;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+.kivanoHolder_ocb{
+    margin-top: 25px;
+}
+
+.kivano_ocb{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+
+    color: #272727;
+
+    text-shadow: 0.3px 0.3px 0.5px rgba(255, 255, 255, 0.17);
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+.cardHeader_Cab{
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.cardHeaderText_Cab{
+    text-align: center;
+}
+
+.opCardInfo_Cab{
+    width: 100%;
+    margin-top: 70px;
+    padding: 10px 40px;
+}
+
+.Lable_Cab{
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+
+.margin_Cab{
+    margin-top: 40px;
+}
+
+
+.op_Cab{
+    font-size: 18px;
+}
+
+.passChange{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    padding-left: 0;
+    color: rgb(224, 224, 224);
+}
+
+.passChange:hover{
+    color:rgb(28, 30, 33)
+}
+
+
+.cardF_Cab{
+    width: 100%;
+    margin-top: 135px;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,204 @@
+.page_ma{
+    width: 100%;
+    height: auto
+}
+
+.section_ma{
+    width: 100%;
+    height: 100vh;
+}
+
+.h-a_ma{
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.body_ma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 30px;
+}
+
+.blockWithName_ma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+}
+
+.kivano_ma{
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to right, rgb(226, 97, 29), rgb(226, 97, 29) 50%, rgb(28, 30, 33) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.kivano_ma:hover{
+    background-position: 0 100%;
+}
+
+.sport_ma{
+    font-size: 70px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-weight: 700;
+    color: rgb(226, 97, 29);
+}
+
+
+
+.beggining_ma{
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.upperTextHplder_ma{
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 0 90px;
+    text-align: left;
+}
+
+.left_ma{
+    display: flex;
+    justify-content: right;
+}
+
+.holder_ma{
+    text-align: right;
+}
+
+.tag_ma, .headerOfTheLsatDivText_ma{
+    font-size: 35px;
+}
+
+.textSectionHolder_ma{
+    margin-top: 30px;
+    width: 800px;
+
+
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+}
+
+.m-l-10_ma{
+    margin-left: 10px;
+}
+
+.m-r-10_ma{
+    margin-right: 10px;
+}
+
+.lastDivText_ma{
+    width: 100%;
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+.headerOfTheLsatDivText_ma{
+    font-weight: 700;
+}
+
+
+.textHolderOfTheLastDivText_ma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.deviderHolder_ma{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.devider_ma{
+    width: 120px;
+    height: 3px;
+    background-color: rgb(226, 97, 29);
+    border-radius: 20px;
+}
+
+
+.TextText_ma{
+    width: 1000px;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+}
+
+.link_ma{
+    color:rgb(28, 30, 33);
+    font-weight: 700;
+}
+
+
+.footer_ma{
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    height: 170px;
+    background-color: black;
+}
+
+.kivanoDiv_ma{
+    text-align: center;
+    width: 50%;
+}
+
+
+.kivanoLink_ma{
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(226, 97, 29);
+}
+
+.splitter_ma{
+    width: 3px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.social_ma{
+    width: 50%;
+    text-align: center;
+}
+
+.textOfSocial_ma{
+    font-size: 25px;
+    color: white
+}
+
+.iconHolder_ma{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.linkToSocial{
+    margin: 0 20px;
+    color: white;
+}

@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.MSform{
+    width: 100%;
+    height: 100vh;
+    padding-top: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.MSformc{
+    height: 200px;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 17px;
+    box-shadow: 3.5px 5px 2px rgba(0, 0, 0, .1);
+    
+    background-color: rgb(28, 30, 33);
+}
+
+
+
+.MSupperTextBockc{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 17px 17px 0 0;
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    text-align: center;
+;
+    
+}
+
+.MStextc{
+    color: rgb(255, 255, 255)
+}
+

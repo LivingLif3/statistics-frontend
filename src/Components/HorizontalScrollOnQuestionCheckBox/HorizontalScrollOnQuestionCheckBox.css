@@ -1,0 +1,9 @@
+.checkBowScroller_rp{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+}

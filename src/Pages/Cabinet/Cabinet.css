@@ -1,0 +1,250 @@
+
+
+.page_Cab{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.header_mt{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.linkDiv_Cab{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.nav_Cab{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(224, 224, 224);
+    transition: color .1 linear;
+
+    text-decoration: none;
+    
+    margin: 12px 50px;
+    
+    transition: color .1s  linear;
+}
+
+.nav_Cab::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: rgb(28, 30, 33);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+
+    transition: opacity .1s linear;
+}
+
+.nav_Cab:hover{
+    color: rgb(28, 30, 33)
+}
+
+.nav_Cab:hover::after{
+    opacity: 1;
+
+}
+
+.mpage_Cab{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px 0;
+    padding: 0 40px;
+
+}
+
+.items_Cab{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.bigText_Cab{
+    text-align: left;
+    font-size: 50px;
+}
+
+.smallText_Cab{
+    text-align: left;
+    margin-top: 30px;
+}
+
+.container_Cab{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    
+}
+
+.itemOne_Cab{
+    padding: 20px;
+    margin: 10px 20px;
+    margin-left: 0;
+}
+
+.textInfo_Cab{
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.input2_Cab{
+    background-color: rgba(226, 97, 29, 1);
+    padding: 15px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+::webkit-calendar-picker-indicator{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.sec_Cab{
+    width: 200px;
+    padding: 17px;
+    text-align: center;
+}
+
+.buttonToSend_Cab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button_Cab{
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(28, 30, 33);
+    color: rgb(255, 255, 255)
+
+}
+
+/* Нижняя часть страницы */
+
+.footer_Cab{
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+
+}
+
+.id_Cab{
+    text-align: center;
+}
+
+.kivano_Cab{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    color:rgb(28, 30, 33)
+
+}
+
+.kivano_Cab:hover{
+    color:#474A51;
+}
+
+
+.front_Cab{
+    max-width: 350px;
+    max-height: 500px;
+}
+
+
+
+
+.input__wrapper {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+  }
+   
+  .input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+   
+  .input__file-icon-wrapper {
+    height: 60px;
+    width: 60px;
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-right: 1px solid #fff;
+  }
+   
+  .input__file-button-text {
+    line-height: 1;
+    margin-top: 1px;
+  }
+   
+  .input__file-button {
+    width: 100%;
+    max-width: 290px;
+    height: 60px;
+    background:rgba(226, 97, 29, 1);
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 auto;
+  }

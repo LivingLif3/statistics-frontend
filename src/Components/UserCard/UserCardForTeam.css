@@ -1,0 +1,41 @@
+.card_ocfmt{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 0 10px 10px 10px;
+
+    transition: opacity .7 linear;
+}
+
+.front_ocfmt{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #111;
+}
+
+.deliteHolder_ocfmt{
+    position: absolute;
+    width: 76px;
+    height: 30.28px;
+    right: 1px;
+    top: 12px;
+    padding: 1px 10px 0;
+
+    background: #303030;
+    color: rgba(226, 97, 29, 1);
+    font-size: 20px;
+
+    border-radius: 40px 12px 0 40px;
+
+    opacity: 0;
+
+    transition: opacity .7 linear;
+}
+
+.card_ocfmt:hover .deliteHolder_ocfmt{
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+}

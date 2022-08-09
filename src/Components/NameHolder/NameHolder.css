@@ -1,0 +1,12 @@
+.nameHolder_nm{
+    margin: 20px;
+
+    padding: 10px 30px;
+    font-size: 19px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #eee;
+    color: rgb(28, 33, 30);
+    font-weight: 700;
+    cursor: pointer;
+}

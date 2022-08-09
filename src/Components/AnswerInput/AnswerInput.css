@@ -1,0 +1,8 @@
+.answerInput_ai{
+    width: 400px;
+    margin-top: 20px;
+    font-size: 19px;
+    padding: 5px 20px;
+    border: 0;
+    border-bottom: 2px solid rgb(28, 30, 33);
+  }

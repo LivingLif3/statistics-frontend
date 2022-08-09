@@ -1,0 +1,84 @@
+/* Customize the label (the container) */
+.playerHolder_apcb{
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(28, 30, 33);
+}
+
+.container_apcb {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container_apcb input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+  }
+  
+
+  .checkBoxHolder_apcb{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+  }
+ 
+  .playerHolder_apcb{
+    text-align: center;
+    padding-bottom: 7px;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark_apcb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container_apcb:hover input ~ .checkmark_apcb {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container_apcb input:checked ~ .checkmark_apcb {
+    background-color: rgb(28, 30, 33);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark_apcb:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container_apcb input:checked ~ .checkmark_apcb:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container_apcb .checkmark_apcb:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

@@ -1,0 +1,24 @@
+/* Основная страница команды */
+
+.page_s{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+    color: rgb(28. 30, 33);
+}
+
+
+ /* Результаты поиска */
+ .resultDiv_s{
+    margin: 0 auto;
+    width: 815px;
+    max-height: 480px;
+    margin-top: 50px;
+
+    overflow: auto;
+ }
+
+/* Форма */
+
+

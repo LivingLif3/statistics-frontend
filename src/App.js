@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './Components/AppRouter';
+import { connect } from 'react-redux';
+import { checkAuth, getUsers } from './redux-store/UserReducer';
+import { useEffect } from 'react';
 
-function App() {
+const App = ({ isAuth, role, checkAuth, getUsers }) => {
+  useEffect(() => {
+    if (window.localStorage.getItem('token')) {
+      checkAuth();
+      getUsers();
+    }
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <AppRouter isAuth={isAuth} role={role} />
+    </BrowserRouter>
   );
-}
+};
 
-export default App;
+let mapStateToProps = (state) => ({
+  isAuth: state.userReducer.isAuth,
+  role: state.userReducer.role,
+});
+
+export default connect(mapStateToProps, { checkAuth, getUsers })(App);

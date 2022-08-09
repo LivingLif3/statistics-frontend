@@ -1,0 +1,91 @@
+.body_mt{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.firstGroupOfBloks_mt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 30px;
+}
+
+.teaName_mt{
+    margin: 0 60px;
+}
+
+.input_mt{
+    width: 300px;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 0;
+    border-bottom: 2px solid rgb(28, 30,33); 
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.counterDiv_mt{
+    margin-left: 350px;
+}
+
+.secondGroupOfBlocks_mt{
+    width: 100%;
+    margin-top: 50px;
+    padding: 5px 30px;
+}
+
+.textOfTheSecondGroup_mt{
+    text-align: center;
+}
+
+.playerHolder_mt{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.player_mt{
+    width: 370px;
+    height: 510px;
+    max-width: 370px;
+    max-height: 510px;
+    margin: 25px 20px;
+}
+
+.frontSideOfTheCard{
+    width: 350px;
+    height: 500px;
+    background-color: aquamarine;
+}
+
+.buttonToDelite_mt{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.buttonDelite_mt{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 20px;
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* .delite_mt{
+    padding: 10px 60px;
+    background-color: rgb(28, 30,33);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 20px
+} */

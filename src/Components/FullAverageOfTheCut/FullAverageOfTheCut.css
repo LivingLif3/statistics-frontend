@@ -1,0 +1,15 @@
+.average_fac{
+    width: 80%;
+    margin-top: 20px;
+    border-top: 2px solid rgb(28, 30, 33);
+  }
+
+.averageNumber_fac{
+    padding: 0 5px;
+    font-weight: 700;
+
+  }
+
+.textOfAverage_fac, .averageNumber_fac{
+    font-size: 26px;
+  }

@@ -1,0 +1,105 @@
+
+.suForm{
+    width: 100%;
+    height: 100vh;
+    /* background: rgb(52, 56, 61); */
+    background: rgb(255, 255, 255);
+	padding: 60px;
+}
+.suH1{
+	color: rgb(0, 0, 0);
+	margin: 200px auto;
+	width: 200px;
+	text-align: center;
+    padding-right: 40px;
+}
+.suWrapper{
+	width: 320px;
+    margin: 0 auto;
+	margin-top: -165px;
+}
+
+/* === Sign in Form === */
+.suSignin {
+	height: 90px;
+	width: 300px;
+	border-radius: 8px;
+	position: relative;
+}
+.suSignin::before {
+	display: block;
+	position: relative;
+	height: 2px;
+	background: rgb(255, 255, 255);
+	content: '';
+	top: 44px;
+	margin-left: 20px;
+	z-index: 1;
+}
+.suSignin input:first-of-type{
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+.suSignin input:last-of-type{
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.suSignin  input[type="text"], .suSignin  input[type="password"], .suSignin button[type="submit"]{
+	background: rgb(28, 30, 33);
+	box-shadow: inset -100px -100px 0 rgb(28, 30, 33); /*Prevent yellow autofill color*/
+	color: rgb(52, 56, 61);
+}
+.suSignin  input[type="text"], .suSignin  input[type="password"]{
+	position: relative;
+	display: block;
+	width: 280px;
+	height: 45px;
+	border: 0;
+	outline: 0;
+	top: -2px;
+	padding: 0 0 0 20px;
+	font-weight: 700;
+}
+.suSignin  input[type="text"]:focus, .suSignin  input[type="password"]:focus{
+	color: rgb(255, 255, 255);
+}
+.suSignin button[type="submit"]{
+	display: block;
+	position: inherit;
+	width: 52px;
+	height: 52px;
+	color: rgb(255, 255, 255);
+	border-radius: 50px;
+	outline: 0;
+	z-index: 2;
+	bottom: 73px;
+	left: 250px;
+	border: 6px solid rgb(255, 255, 255);
+	font-size: 25px;
+	text-indent: 0px;
+	padding-left: 9px;
+	padding-bottom: 3px;
+	text-align: center;
+    padding-right: 4px;
+}
+.suSignin button[type="submit"]:hover{
+	color: rgb(0, 126, 165);
+	text-shadow: 0 0 10px rgb(0, 126, 165);
+	cursor: pointer;
+}
+.suSignin p {
+	color: rgb(79, 85, 97);
+	padding: 0 20px;
+	font-weight: 700;
+	font-size: 12px;
+	margin: 5px 0 0 0;
+    text-align: center;
+}
+.suSignin p > span{
+	color: rgb(111, 119, 135);
+	text-decoration: none;
+}
+.suSignin p > span:hover{
+	border-bottom: 1px solid;
+	cursor: pointer;
+}

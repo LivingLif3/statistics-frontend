@@ -1,0 +1,71 @@
+
+.page_m{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.4);
+    position: fixed;
+    top: 0;
+    left:0;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.page_m.activeModal{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.body_m{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    width: 50vw;
+    transform: scale(0.5);
+    transition: .4s all;
+}
+
+.body_m.activeModal{
+    transform: scale(1);
+}
+
+
+.modalText{
+    text-align: center;
+}
+/* -------------------------------------------------------------------------------------- */
+                                /* Удаление игроков в команде */
+
+
+
+
+.modalButtonHolder{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.modalButton{
+    margin: 0 30px;
+    padding: 5px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(28, 30, 33);
+}
+
+/* -------------------------------------------------------------------------------------- */
+                                /* Подтверждение названия команды*/
+
+
+
+/* -------------------------------------------------------------------------------------- */
+                                /* Запрет использования названия*/
+

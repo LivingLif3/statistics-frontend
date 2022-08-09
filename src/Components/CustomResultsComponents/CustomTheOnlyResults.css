@@ -1,0 +1,28 @@
+.result_corp{
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(28, 30, 33);
+    width: auto;
+  }
+
+  .day_corp, .answer_corp{
+    font-size: 20px;   
+    height: 100%;
+  }
+
+  .day_corp{
+    width: 120px ;
+    padding: 5px 10px;
+    background-color: rgba(226, 97, 29, 1);
+    color: rgb(255, 255, 255)
+  }
+
+
+  .answer_corp{
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 20px;
+    width: auto;
+    padding-left: 10px;
+  }

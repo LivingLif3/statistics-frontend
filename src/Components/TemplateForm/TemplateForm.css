@@ -1,0 +1,85 @@
+.qForm_qf{
+    width: 540px;
+    min-width: 440px;
+    height: 400px;
+    background-color: rgb(28, 30, 33);
+    border-radius: 15px;
+    margin: 0 37px;
+}
+
+.qForm_qf:last-child{
+    margin-right: 50px;
+}
+
+.qForm_qf:first-child{
+    margin-left: 50px;
+}
+
+.qFormHeader_qf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 13%;
+    border-radius: 10px 10px 0 0 ;
+}
+
+
+.qFormHeaderText_qf{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255)
+}
+
+.qFormBody_qf{
+    width: 100%;
+    height: 72%;
+    padding: 6px;
+
+    max-height: 80%;
+    overflow: auto;
+}
+
+.qFormBodyText_qf{
+    font-size: 18px;
+    color:rgb(255, 255, 255)
+}
+
+.qFormBodyText_qf::first-letter{
+    text-transform: capitalize;
+}
+
+.qFormFooter_qf{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Kivano_qf{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 1);
+}
+
+
+.Abutton_qf{
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 19px;
+    border-radius: 18px;
+    border: 0; 
+
+    background-color: rgb(255, 255, 255);
+}
+
+.Abutton_qf:hover{
+    background-color: #00A550;
+}
+
+.activeClick {
+    color:#00A550
+}

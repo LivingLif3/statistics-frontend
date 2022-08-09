@@ -1,0 +1,16 @@
+.result_orp{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid rgb(28, 30, 33);
+  }
+
+  .day_orp, .answer_orp{
+    font-size: 20px;
+    padding: 3px;
+  }
+
+  .answer_orp{
+    font-weight: 700;
+    font-size: 22px;
+  }

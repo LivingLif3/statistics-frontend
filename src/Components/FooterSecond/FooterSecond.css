@@ -1,0 +1,12 @@
+.choiceDivider_fs{
+    display: flex;
+    width: 100%;
+}
+
+.smallTag_fs{
+    font-size: 30px; 
+}
+
+.m-b-20_fs{
+    margin-bottom: 20px;
+}
