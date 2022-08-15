@@ -5,13 +5,13 @@ import KivanoLinkHolder from './KivanoLinkHolder';
 import PersonalInfo from './PersonalInfo';
 import RoleHolder from './RoleHolder';
 
-const OriginalBackInfoHolder = () => {
+const OriginalBackInfoHolder = ({ email, role }) => {
   return (
     <div className="infoPartHolder_ocb">
       <PersonalInfo />
-      <RoleHolder />
+      <RoleHolder role={role} />
       <Devider />
-      <EmailHolder />
+      <EmailHolder email={email} />
       <KivanoLinkHolder />
     </div>
   );

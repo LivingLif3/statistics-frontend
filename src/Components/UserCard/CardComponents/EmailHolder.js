@@ -1,9 +1,9 @@
 import React from 'react';
 
-const EmailHolder = () => {
+const EmailHolder = ({ email }) => {
   return (
     <div className="emailHolde_ocb">
-      <span className="email_ocb">ivan2003sha@gmail.com</span>
+      <span className="email_ocb">{email}</span>
     </div>
   );
 };

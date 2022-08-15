@@ -96,9 +96,6 @@ const Cabinet = ({ updateData, age, weightProp, heightProp, img, updateAvatar, r
                 onChange={(e) => setHeight(e.target.value)}
               />
             </div>
-            {age && age}
-            {heightProp && heightProp}
-            {weightProp && weightProp}
           </div>
           <div className="buttonToSend_Cab">
             <button className="button_Cab" onClick={() => updateData(date, height, weight)}>
