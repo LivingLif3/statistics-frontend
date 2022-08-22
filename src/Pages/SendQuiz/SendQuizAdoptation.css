@@ -36,6 +36,11 @@
         background-color: rgb(28, 30, 33);
     }
     
+    .avatar_tb{
+        width: 80px;
+        height: 80px;
+        font-size: 80px;
+    }
 }
 
 @media only screen and (max-width: 1024px){
@@ -87,10 +92,17 @@
     .avatar_tb{
         width: 70px;
         height: 70px;
+        font-size: 70px;
     }
 
     .button_qc{
         width: 220px
+    }
+
+    .avatar_tb{
+        width: 80px;
+        height: 80px;
+        font-size: 80px;
     }
 }
 
@@ -154,6 +166,7 @@
     .avatar_tb{
         width: 53px;
         height: 53px;
+        font-size: 53px;
     }
 
     .lineOne_tb{
@@ -280,6 +293,7 @@
 
     .avatar_tb{
         width: 35px;
-        height: 35px
+        height: 35px;
+        font-size: 35px;
     }
 }

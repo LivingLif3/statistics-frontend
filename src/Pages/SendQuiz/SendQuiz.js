@@ -30,12 +30,15 @@ const SendQuiz = ({
     getTeamPlayers(team);
   }, []);
   let onSendChosenPlayers = async () => {
-    // if (usersState.length === 0 || templatesState.length === 0) {
-    //   return;
-    // }
+    if (usersState.length === 0 || templatesState.length === 0) {
+      return;
+    }
     for (let i = 0; i < templatesState.length; i++) {
       await $api.post('/quiz', { quizId: templatesState[i], users: usersState, repeat });
     }
+    setTemplatesState([]);
+    setUsersState([]);
+    setRepeat(false);
   };
   let onSendAllPlayers = async () => {
     if (templatesState.length === 0) {
@@ -48,6 +51,9 @@ const SendQuiz = ({
         repeat,
       });
     }
+    setTemplatesState([]);
+    setUsersState([]);
+    setRepeat(false);
   };
   let onSendAllTrainers = async () => {
     if (templatesState.length === 0) {
@@ -60,6 +66,9 @@ const SendQuiz = ({
         repeat,
       });
     }
+    setTemplatesState([]);
+    setUsersState([]);
+    setRepeat(false);
   };
   let navigator = useNavigate();
   if (!team) {
@@ -88,8 +97,8 @@ const SendQuiz = ({
                   />
                 ))}
             </div>
-            <RepeatCheckBox repeatQuiz={repeatQuiz} repeat={repeat} setRepeat={setRepeat} />
           </div>
+          <RepeatCheckBox repeatQuiz={repeatQuiz} repeat={repeat} setRepeat={setRepeat} />
         </div>
         <div className="hiddenDeviderHolder_qc">
           <div className="hiddenDevider_qc"></div>

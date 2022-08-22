@@ -1,9 +1,10 @@
 import { SmileFilled } from '@ant-design/icons';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './TeamBar.css';
 
 const TeamBar = ({ name, surname, id, img, usersState, setUsersState }) => {
   const [click, setClick] = useState(false);
+  const [active, setActive] = useState(false);
   const onClick = () => {
     setClick(!click);
     if (!click) {
@@ -15,13 +16,20 @@ const TeamBar = ({ name, surname, id, img, usersState, setUsersState }) => {
       setUsersState(usersState.filter((itemId) => itemId !== id));
     }
   };
+  useEffect(() => {
+    if (usersState.indexOf(id) !== -1) {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+  }, [usersState.length]);
   let avatar = img ? `http://localhost:8000/photos/${img}` : null;
   return (
-    <div className={`result_tb ${click && 'activeBar'}`} onClick={onClick}>
+    <div className={`result_tb ${active && 'activeBar'}`} onClick={onClick}>
       {avatar ? (
         <img src={avatar} alt="avatar" className="avatar_tb" />
       ) : (
-        <SmileFilled style={{ fontSize: '80px' }} />
+        <SmileFilled className="avatar_tb" />
       )}
 
       <div className="info_s">
