@@ -1,0 +1,37 @@
+
+@media only screen and (max-width:1380px){
+    .nav_sfnb{
+        font-size: 16px;
+        margin: 12px 25px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .nav_sfnb{
+        font-size: 14px;
+        margin: 12px 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .nav_sfnb{
+        font-size: 9px;
+        margin: 12px 8px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .nav_sfnb{
+        font-size: 6px;
+        margin: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .nav_sfnb{
+        font-size: 5px;
+        margin: 5px 2px;
+    }
+
+}

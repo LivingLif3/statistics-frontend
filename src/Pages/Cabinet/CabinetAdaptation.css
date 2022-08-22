@@ -1,0 +1,280 @@
+@media only screen and (max-width: 1259px){
+    .bigText_Cab{
+        font-size: 40px;
+    }
+
+    .mpage_Cab{
+        padding: 0 20px;
+        margin: 30px 0;
+    }
+
+    .items_Cab{
+        padding-left: 10px;
+        width: 65vw;
+
+    }
+
+    .smallText_Cab{
+        margin-top: 20px;
+        font-size: 14px
+    }
+
+    .holder_Cab, .container_Cab{
+        transform: scale(.8);
+        margin-top: -10px;
+    }
+
+    .centralHolder_Cab{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container_Cab{
+        width: 100%;
+        justify-content: center;
+    }
+
+
+
+    .cardDiv_Cab{
+        transform: scale(.8);
+    }
+
+    .itemOne_Cab{
+        margin: 10px;
+    }
+
+    .footer_Cab{
+        padding-bottom: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 976px){
+    .bigText_Cab{
+        font-size: 30px;
+    }
+
+    .mpage_Cab{
+        padding: 0 15px;
+        margin: 20px 0;
+    }
+
+    .items_Cab{
+        padding-left: 10px;
+        width: 60vw
+    }
+
+    .smallText_Cab{
+        margin-top: 15px;
+        font-size: 14px
+    }
+
+    .holder_Cab, .container_Cab{
+        transform: scale(.6);
+        margin-top: -10px;
+    }
+
+    .centralHolder_Cab{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container_Cab{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .kivano_Cab{
+        font-size: 25px
+    }
+
+
+    .cardDiv_Cab{
+        transform: scale(.6);
+        margin-top: -45px;
+    }
+
+    .itemOne_Cab{
+        margin-top: 0;
+        padding-top:10px;
+    }
+
+    .button_Cab{
+        transform: scale(.85);
+    }
+
+    .footer_Cab{
+        padding-bottom: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 764px){
+.page_Cab{
+    height: auto
+}
+.bigText_Cab{
+    font-size: 20px;
+}
+
+.mpage_Cab{
+    padding: 0 15px;
+    margin: 0;
+    max-height: 370px;
+}
+
+.items_Cab{
+    padding-left: 10px;
+    width: 55vw;
+    padding-top: 0;
+    max-height: 350px;
+}
+
+.smallText_Cab{
+    margin-top: 15px;
+    font-size: 10px
+}
+
+.holder_Cab, .container_Cab{
+    transform: scale(.5);
+    margin-top: -10px;
+}
+
+.centralHolder_Cab{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container_Cab{
+    width: 100%;
+    justify-content: center;
+}
+
+.kivano_Cab{
+    font-size: 25px
+}
+
+
+.cardDiv_Cab{
+    transform: scale(.5);
+    margin-top: -100px;
+}
+
+.itemOne_Cab{
+    margin-top: 0;
+    padding: 0;
+    padding-top:10px;
+}
+
+.button_Cab{
+    transform: scale(.6);
+}
+
+.footer_Cab{
+    padding-bottom: 20px;
+}
+
+}
+
+@media only screen and (max-width: 630px){
+    .page_Cab{
+        height: auto
+    }
+    .bigText_Cab{
+        font-size: 20px;
+    }
+    
+    .mpage_Cab{
+        justify-content: unset;
+        flex-direction: column;
+        padding: 0 15px;
+        margin: 0;
+        max-height: 660px;
+    }
+    
+    .items_Cab{
+        padding-left: 0px;
+        width: 100%;
+        padding-top: 0;
+        max-height: 350px;
+    }
+    
+    .smallText_Cab{
+        margin-top: 15px;
+        font-size: 10px
+    }
+    
+    .holder_Cab, .container_Cab{
+        transform: scale(.5);
+        margin-top: -10px;
+    }
+    
+    .centralHolder_Cab{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .container_Cab{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .kivano_Cab{
+        font-size: 25px
+    }
+    
+    
+    .cardDiv_Cab{
+        transform: scale(.5);
+        margin-left: 10px;
+    }
+    
+    .itemOne_Cab{
+        margin-top: 0;
+        padding: 0;
+        padding-top:10px;
+    }
+
+    .buttonToSend_Cab{
+        padding-left: 15px;
+    }
+    
+    .button_Cab{
+        transform: scale(.6);
+    }
+    
+    .footer_Cab{
+        padding-bottom: 20px;
+        padding-left: 30px;
+        display: none;
+    }
+    
+    .kivano_Cab{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 360px){
+
+    .bigText_Cab{
+        font-size: 15px;
+    }
+
+    .smallText_Cab{
+        margin-top: 15px;
+        font-size: 8px
+    }
+
+    .holder_Cab, .container_Cab{
+        transform: scale(.45);
+        margin-top: -10px;
+    }
+}

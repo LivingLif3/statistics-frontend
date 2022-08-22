@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import QuestionFormationBarClone from '../../Components/QuestionFormationBar/QuestionFormationBarClone';
 import StateFormNavBar from '../../Components/StateFormNavBar/StateFormNavBar';
 import { createTemplateQuiz } from '../../redux-store/QuizReducer';
-import BarInput from './BarInput';
+import './CreateQuizAdaptation.css';
 import './CreateQuiz.css';
 import QuestionFormationBar from './QuestionFormationBar';
 // import StateFormNavBar from "./stateFormNavBar";

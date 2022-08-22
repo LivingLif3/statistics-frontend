@@ -1,0 +1,552 @@
+/*@media only screen and (max-width: 2560px){
+	.texter_SH{
+		font-size: 70px;
+	}
+
+	.texting_SH{
+		font-size: 40px;
+	}
+
+	.Ddivider_SH{
+		width: 233px;
+		height: 8px;
+		margin: 162px auto 0;
+	}
+
+	.head_SH{
+		width: 400px;
+		height: 180px;
+		bottom: -152px;
+	}
+
+	.packName_SH{
+		font-size: 50px;
+	}
+
+	.price_SH{
+		padding-top: 17px;
+		font-size: 60px;
+	}
+
+	.month_SH{
+
+	}
+
+	.Body_SH{
+		width: 350px;
+		height: 880px;
+		padding-top: 157px;
+	}
+
+	.ulDiv_SH{
+		font-size: 30px;
+	}
+
+	.pointsOfPackage_SH{
+		line-height: 50px;
+	}
+
+	.foot_SH{
+		width:  400px;
+		heigth: 180px;
+	}
+
+	.purchase_SH{
+		font-size: 40px;
+		padding: 5px 90px;
+	}
+}
+*/
+@media only screen and (max-width: 1500px){
+	.texterDiv_SH{
+		padding-left: 10vw;
+	}
+
+	.ld_SH{
+		padding-right: 10vw;
+	}
+
+
+}
+
+@media only screen and (max-width: 1291px){
+	.head_SH{
+		width: 250px;
+		height: 125px;
+	}
+
+	.headText_SH{
+		padding-top: 11px;
+	}
+
+	.packName_SH{
+		font-size: 25px;
+	}
+
+	.price_SH{
+		font-size: 40px;
+		padding-top: 17px;
+	}
+
+	.month_SH{
+		font-size:  17px;
+	}
+
+	.Body_SH{
+		width:  200px;
+	}
+
+	.foot_SH{
+		width:  250px;
+		height: 125px;
+	}
+
+	.purchase_SH{
+		font-size: 23px;
+		padding: 5px 45px;
+	}
+}
+
+@media only screen and (max-width:  1094px){
+
+	.texter_SH{
+		font-size: 35px;
+	}
+
+	.texting_SH{
+		font-size: 18px;
+	}
+
+
+	.head_SH{
+		width: 225px;
+		height: 125px;
+	}
+
+	.headText_SH{
+		padding-top: 11px;
+	}
+
+	.packName_SH{
+		font-size: 23px;
+	}
+
+	.price_SH{
+		font-size: 35px;
+		padding-top: 15px;
+	}
+
+	.month_SH{
+		font-size:  15px;
+	}
+
+	.Body_SH{
+		width:  175px;
+	}
+
+	.ulDiv_SH{
+		padding-left: 12px;
+		font-size: 15px;
+	}
+
+	.foot_SH{
+		width:  225px;
+		height: 125px;
+	}
+
+	.purchase_SH{
+		font-size: 21px;
+		padding: 5px 40px;
+	}
+}
+
+@media only screen and (max-width:  1024px){
+	.texterDiv_SH{
+		padding-left: 9vw;
+	}
+
+	.ld_SH{
+		padding-right: 9vw;
+	}
+}
+
+@media only screen and (max-width:  996px){
+	.head_SH{
+		width: 200px;
+		height: 125px;
+	}
+
+	.headText_SH{
+		padding-top: 11px;
+	}
+
+	.packName_SH{
+		font-size: 21px;
+	}
+
+	.price_SH{
+		font-size: 30px;
+		padding-top: 15px;
+	}
+
+	.month_SH{
+		font-size:  15px;
+	}
+
+	.Body_SH{
+		width:  150px;
+	}
+
+	.ulDiv_SH{
+		padding-left: 9px;
+		font-size: 13px;
+	}
+
+	.foot_SH{
+		width:  200px;
+		height: 125px;
+	}
+
+	.purchase_SH{
+		font-size: 19px;
+		padding: 5px 35px;
+	}
+}
+
+@media only screen and (max-width:  896px){
+
+	.texter_SH{
+		font-size: 33px;
+	}
+
+	.texting_SH{
+		font-size: 16px;
+	}
+
+	.head_SH{
+		width: 175px;
+		min-width: 175px;
+		height: 110px;
+		bottom:  -99px;
+	}
+
+	.headText_SH{
+		padding-top: 11px;
+	}
+
+	.packName_SH{
+		font-size: 21px;
+	}
+
+	.price_SH{
+		font-size: 27px;
+		padding-top: 15px;
+	}
+
+	.month_SH{
+		font-size:  14px;
+	}
+
+	.Body_SH{
+		width:  125px;
+		min-width: 125px;
+		padding-top: 119px;
+		height: 595px;
+	}
+
+	.ulDiv_SH{
+		padding-left: 9px;
+		font-size: 11px;
+	}
+
+	.foot_SH{
+		width:  175px;
+		min-width: 175px;
+		height: 110px;
+		top: -102px;
+	}
+
+	.purchase_SH{
+		font-size: 16px;
+		padding: 5px 35px;
+	}
+}
+
+@media only screen and (max-width:  795px){
+
+	.texterDiv_SH{
+		padding-left: 8vw;
+	}
+
+	.ld_SH{
+		padding-right: 8vw;
+	}
+
+	.mPage_SH{
+		padding: 0 10px;
+	}
+
+	.texter_SH{
+		font-size: 31px;
+	}
+
+	.texting_SH{
+		font-size: 14px;
+	}
+
+	.Ddivider_SH{
+		width:  86px;
+		margin: 43px auto;
+	}
+
+	.chest_SH{
+		margin: 0 7px;
+	}
+
+	.box_SH{
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.head_SH{
+		width: 150px;
+		height: 100px;
+		bottom:  -91px;
+	}
+
+	.headText_SH{
+		padding-top: 11px;
+	}
+
+	.packName_SH{
+		font-size: 18px;
+	}
+
+	.price_SH{
+		font-size: 22px;
+		padding-top: 6px;
+	}
+
+	.month_SH{
+		font-size:  12px;
+	}
+
+	.Body_SH{
+		width:  100px;
+		padding-top: 102px;
+		height: 469px;
+	}
+
+	.ulDiv_SH{
+		padding-left: 7px;
+		font-size: 11px;
+	}
+
+	.pointsOfPackage_SH{
+		line-height: 30px;
+	}
+
+	.pointsOfPackage_SH li::before{
+		padding-right: 5px;
+	}
+
+	.foot_SH{
+		width:  150px;
+		height: 100px;
+		top: -93px;
+	}
+
+	.purchase_SH{
+		font-size: 13px;
+		padding: 5px 25px;
+	}
+}
+
+
+@media only screen and (max-width:  678px){
+
+	.line_SH{
+		margin-top: 30px;
+	}
+
+	.texter_SH{
+		font-size: 29px;
+	}
+
+	.texting_SH{
+		font-size: 12px;
+	}
+
+	.box_SH{
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.chest_SH{
+		margin: 0 5px;
+	}
+}
+
+@media only screen and (max-width:  678px){
+	.head_SH{
+		min-width: 0;
+		width:  125px;
+		height: 80px;
+		bottom:  -71px;
+	}
+
+	.packName_SH{
+		font-size: 13px;
+	}
+
+	.price_SH{
+		font-size: 17px;
+		padding-top: 3px;
+		line-height: 18px;
+	}
+
+	.month_SH{
+		font-size: 10px;
+	}
+
+	.Body_SH{
+		min-width: 0;
+		width: 80px;
+		padding-top: 69px;
+		height: 313px;
+	}
+
+	.ulDiv_SH{
+		padding-left: 4px;
+		font-size: 7px;
+	}
+
+	.pointsOfPackage_SH{
+		line-height: 20px;
+	}
+
+	.foot_SH{
+		min-width: 0;
+		width: 125px;
+		height:  80px;
+		top:  -74px;
+		padding-top: 25px;
+		padding-left: 5px;
+	}
+
+	.purchase_SH{
+		font-size: 12px;
+		padding: 5px 22px 5px 20px;
+	}
+
+	.Ddivider_SH{
+		width:  59px;
+		height: 2px;
+	}
+}	
+
+@media only screen and (max-width:  425px){
+	.line_SH{
+		margin-top: 11px;
+	}
+
+	.texterDiv_SH{
+		padding-left: 6vw;
+	}
+
+	.ld_SH{
+		padding-right: 6vw;
+	}
+
+	.texter_SH{
+		font-size: 25px;
+	}
+
+	.texting_SH{
+		font-size: 9px;
+	}
+
+	.Ddivider_SH{
+		margin: 46px auto 0;
+	}
+
+	.head_SH{
+		min-width: 0;
+		width: 110px;
+		height: 55px;
+		bottom:  -47px;
+	}
+
+	.headText_SH{
+		padding-top: 6px;
+	}
+
+	.packName_SH{
+		font-size: 10px;
+	}
+
+	.price_SH{
+		font-size: 12px;
+		padding-top: 6px;
+		line-height: 12px;
+	}
+
+	.month_SH{
+		font-size:  7px;
+	}
+
+	.Body_SH{
+		min-width: 0;
+		width:  60px;
+		padding-top: 52px;
+		height: 176px;
+	}
+
+	.ulDiv_SH{
+		padding-left: 3px;
+		font-size: 5px;
+	}
+
+	.pointsOfPackage_SH{
+		line-height: 10px;
+	}
+
+	.pointsOfPackage_SH li::before{
+		padding-right: 5px;
+	}
+
+	.foot_SH{
+		min-width: 0;
+		width:  110px;
+		height: 55px;
+		top: -38px;
+		padding-top: 12px;
+	}
+
+	.purchase_SH{
+		font-size: 6px;
+		padding: 5px 15px;
+	}
+
+	.chest_SH{
+		margin: 0 4px;
+	}
+
+}
+
+@media only screen and (max-width:  375px){
+	.line_SH{
+		margin-top: 10px;
+	}
+
+	.texter_SH{
+		font-size: 20px;
+	}
+
+	.texting_SH{
+		font-size: 8px;
+	}
+}
+

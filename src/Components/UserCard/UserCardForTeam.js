@@ -28,7 +28,7 @@ const UserCardForTeam = ({
   let onDeletePlayer = () => {
     onDelete(id);
   };
-  let avatar = img ? `http://localhost:8000/${img}` : null;
+  let avatar = img ? `http://localhost:8000/photos/${img}` : null;
   return (
     <div className="card_ocfmt">
       <div className="front_ocfmt">

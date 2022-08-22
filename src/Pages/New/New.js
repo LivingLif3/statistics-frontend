@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 // import NamePlacePlug from "./newComponents/namePlug_new";
 import StateFormNavBar from '../../Components/StateFormNavBar/StateFormNavBar';
 import './New.css';
+import './NewAdoptation.css';
 import NameHolder from '../../Components/NameHolder/NameHolder';
 import { connect } from 'react-redux';
 import { getQuizesForMe, getQuizQuestions, sendAnswer } from '../../redux-store/QuizReducer';

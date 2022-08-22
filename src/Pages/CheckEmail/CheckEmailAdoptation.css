@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1399px){
+	.MSformc{
+		transform: scale(.8);
+	}
+}
+
+@media only screen and (max-width:  816px){
+	.MSformc{
+		transform: scale(.6);
+	}
+}
+
+@media only screen and (max-width:  532px){
+	.MSformc{
+		transform: scale(.6);
+	}
+}
+
+@media only screen and (max-width:  425px){
+	.MSformc{
+		transform: scale(.5);
+	}
+}

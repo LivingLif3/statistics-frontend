@@ -1,5 +1,6 @@
 import React from 'react';
 import './OriginalNavBar.css';
+import './OriginalNavBarAdoptation.css';
 import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {

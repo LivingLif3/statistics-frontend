@@ -4,6 +4,7 @@ import TeamBar from '../../Components/TeamBar/TeamBar';
 import TemplateForm from '../../Components/TemplateForm/TemplateForm';
 import { connect } from 'react-redux';
 import './SendQuiz.css';
+import './SendQuizAdoptation.css';
 import { getQuizTemplates, getTeamPlayers } from '../../redux-store/QuizReducer';
 import $api from '../../http';
 import StateFormNavBar from '../../Components/StateFormNavBar/StateFormNavBar';
@@ -90,6 +91,9 @@ const SendQuiz = ({
             <RepeatCheckBox repeatQuiz={repeatQuiz} repeat={repeat} setRepeat={setRepeat} />
           </div>
         </div>
+        <div className="hiddenDeviderHolder_qc">
+          <div className="hiddenDevider_qc"></div>
+        </div>
         <div className="rightSide_qc">
           <div className="playersBank_qc">
             <div className="header_qc">
@@ -106,6 +110,7 @@ const SendQuiz = ({
                     surname={player.surname}
                     usersState={usersState}
                     setUsersState={setUsersState}
+                    img={player.img}
                   />
                 ))}
             </div>

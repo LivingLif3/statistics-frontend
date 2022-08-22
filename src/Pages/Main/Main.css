@@ -6,6 +6,7 @@
 .section_ma{
     width: 100%;
     height: 100vh;
+
 }
 
 .h-a_ma{
@@ -99,11 +100,11 @@
 }
 
 .m-l-10_ma{
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .m-r-10_ma{
-    margin-right: 10px;
+    padding-right: 10px;
 }
 
 .lastDivText_ma{
@@ -161,9 +162,16 @@
     background-color: black;
 }
 
-.kivanoDiv_ma{
+.kivanoDiv_ma, .social_ma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 50%;
+}
+
+.social_ma{
+    flex-direction: column;
 }
 
 
@@ -182,10 +190,6 @@
     background-color: rgb(255, 255, 255);
 }
 
-.social_ma{
-    width: 50%;
-    text-align: center;
-}
 
 .textOfSocial_ma{
     font-size: 25px;

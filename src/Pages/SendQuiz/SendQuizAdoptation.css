@@ -1,0 +1,285 @@
+@media only screen and (max-width: 1390px){
+    .body_qc{
+        justify-content: unset;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+
+        padding-bottom: 30px;
+    }
+
+    .collection_qc{
+        width: 900px;
+        height: 500px;
+
+        margin-bottom: 30px;
+    }
+
+    .qForm_qf{
+        min-width: 380px;
+        height: 350px;
+    }
+
+    .hiddenDeviderHolder_qc{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        margin: 20px 0
+    }
+
+    .hiddenDevider_qc{
+        display: block;
+        width: 120px;
+        height: 3px;
+        border-radius: 12px;
+        background-color: rgb(28, 30, 33);
+    }
+    
+}
+
+@media only screen and (max-width: 1024px){
+    .collection_qc{
+        width: 710px;
+        height: 405px;
+    }
+
+    .collectionHeaderTex_qc{
+        font-size: 19px;
+    }
+
+    .qForm_qf{
+        min-width: 295px;
+        height: 280px;
+    }
+
+    .qFormHeaderText_qf{
+        font-size: 17px;
+    }
+
+    .qFormBodyText_qf{
+        font-size: 15px;
+    }
+
+    .container{
+        font-size: 16px;
+    }
+
+    .checkmark{
+        width: 23px;
+        height: 23px;
+    }
+
+    .hiddenDevider_qc{
+        width: 100px
+    }
+
+    .playersBank_qc{
+        width: 710px;
+        height: 480px;
+    }
+
+    .result_tb{
+        width: 695px;
+        height: 80px;
+    }
+
+    .avatar_tb{
+        width: 70px;
+        height: 70px;
+    }
+
+    .button_qc{
+        width: 220px
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .body_qc{
+        margin-top: -15px;
+    }
+
+    .collection_qc{
+        width: 390px;
+        height: 255px;
+    }
+
+    .collectionHeaderTex_qc, .headerText_qc{
+        font-size: 15px;
+    }
+
+    .qForm_qf{
+        height: 160px
+    }
+
+    .qFormBodyText_qf{
+        font-size: 13px;
+    }
+
+    .container{
+        font-size: 14px;
+    }
+
+    .checkmark{
+        width: 20px;
+        height: 20px
+    }
+
+    .container .checkmark:after{
+        top: 3px;
+        left: 6px;
+        width: 6px;
+        height: 10px
+    }
+
+    .hiddenDevider_qc{
+        width: 80px
+    }
+
+    .header_qc{
+        padding-bottom: 10px;
+    }
+
+    .playersBank_qc{
+        width: 385px;
+        height: 265px
+    }
+
+    .result_tb{
+        width: 380px;
+        height: 60px;
+        margin-bottom: 10px
+    }
+
+    .avatar_tb{
+        width: 53px;
+        height: 53px;
+    }
+
+    .lineOne_tb{
+        margin-top: 0;
+    }
+
+    .surname_tb, .name_tb{
+        font-size: 15px;
+    }
+
+    .lable_tb{
+        font-size: 12px;
+    }
+
+    .age_tb{
+        font-size: 14px
+    }
+
+    .id_tb{
+        font-size: 18px
+    }
+
+    .button_qc{
+        width: 118px;
+        font-size: 12px;
+    }
+
+    .buttonText_qc{
+        font-size: 12px;
+        height: 35px
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .collectionHeaderTex_qc, .headerText_qc{
+        font-size: 12px
+    }
+
+    .collection_qc{
+        width: 262px;
+        height: 205px;
+    }
+
+    .qForm_qf{
+        min-width: 105px;
+        margin: 0 14px;
+        height: 126px;
+    }
+
+    .qFormHeaderText_qf{
+        font-size: 6px;
+    }
+
+    .qFormBodyText_qf{
+        font-size: 7px;
+    }
+
+    .hQuestioning{
+        margin-top: -10px;
+    }
+
+    .container{
+        font-size: 12px;
+        padding-left: 27px;
+    }
+
+    .checkmark{
+        width: 19px;
+        height: 19px;
+    }
+
+    .container .checkmark:after{
+        top: 3px;
+        left: 6px;
+        width: 4px;
+        height: 8px;
+    }
+
+    .hiddenDeviderHolder_qc{
+        margin-top: -11px
+    }
+
+    .playersBank_qc{
+        width: 284px;
+        max-height: 466px;
+    }
+
+    .result_tb{
+        width: 272px;
+        height: 45px;
+        margin-bottom: 5px;
+    }
+
+    .surname_tb, .name_tb{
+        font-size: 12px;
+    }
+
+    .lineTwo_tb{
+        margin-top: -7px;
+    }
+
+    .lable_tb{
+        font-size: 9px
+    }
+
+    .age_tb{
+        font-size: 12px
+    }
+
+    .id_tb{
+        font-size: 12px;
+    }
+
+    .button_qc{
+        width: 80px;
+        font-size: 9px;
+        height: 33px;
+        border-radius: 12px;
+    }
+
+    .buttonText_qc{
+        font-size: 9px;
+    }
+
+    .avatar_tb{
+        width: 35px;
+        height: 35px
+    }
+}

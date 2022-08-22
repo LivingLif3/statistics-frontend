@@ -1,5 +1,6 @@
 import React from 'react';
 import './Main.css';
+import './MainAdoptation.css';
 import { InstagramFilled } from '@ant-design/icons';
 import { TwitterOutlined } from '@ant-design/icons';
 import NavBar from '../../Components/NavBar/NavBar';

@@ -1,0 +1,21 @@
+.result_srp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 100px;
+    background-color: rgb(28, 30, 33);
+    margin-bottom: 20px;
+    padding: 10px;
+    
+    border-radius: 20px;
+
+    color: rgb(224, 224, 224)
+}
+
+
+.text_srp{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}

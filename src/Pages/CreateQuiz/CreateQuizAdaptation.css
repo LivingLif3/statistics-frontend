@@ -1,0 +1,358 @@
+@media only screen and (max-width: 1270px){
+    .upperTextText_owh{
+        font-size: 35px;
+    }
+
+    .bottomText_owh{
+        font-size:16px
+    }
+
+    .input_owh{
+        width: 325px;
+        font-size: 18px;
+    }
+
+    .placeToFormTheQuestion_owh{
+        width: 325px;
+        font-size: 18px;
+    }
+
+    .plusButton_owh{
+        font-size: 20px;
+    }
+
+    .qDiv_owh{
+        width: 380px;
+    }
+
+    .numberOfQuestion{
+        margin-right: 10px;
+    }
+    
+    .qInput_owh{
+        width: 310px;
+        margin-right: 5px;
+    }
+
+    .delButton_owh{
+        font-size: 25px;
+    }
+
+    answerField_owh{
+        margin-left: 0;
+    }
+
+    .form_radio_group label{
+        font-size: 14px;
+    }
+
+    .radioButtonHolder_owh{
+        margin-top: 28px
+    }
+
+    .textArea_owh{
+        min-width: 270px;
+        max-width: 270px;
+        width: 270px;
+        font-size: 17px;
+    }
+
+    .finalButton_owh{
+        padding-bottom: 20px;
+        margin-top: 35px
+    }
+
+    .fButton_owh{
+        font-size: 17px
+    }
+}
+
+@media only screen and (max-width: 992px){
+
+    .twoSides_owh{
+        padding-left: 30px;
+    }
+
+    .upperTextText_owh{
+        font-size: 20px;
+    }
+
+    .bottomText_owh{
+        font-size: 14px;
+        margin-top: 10px
+    }
+
+    /* Весь нижний блок */
+    .creation_owh{
+        margin-top: 45px;
+    }
+
+
+    /* Инпут названия опроса */
+    .input_owh{
+        width: 257px;
+        font-size: 16px;
+    }
+
+    /* Контейнер с блоками */
+    .fields_owh{
+
+    }
+
+    /* Левый контейнер */
+    .questionField_owh{
+        width: 333px
+    }
+
+    /* Название левого контейнера */
+    .textDiscription_owh{
+        font-size: 15px
+    }
+
+
+    /* Создание вопроса */
+    .placeToFormTheQuestionDiv_owh{
+        margin-bottom: 20px
+    }
+
+
+    /* Инпут создания вопроса */
+    .placeToFormTheQuestion_owh{
+        width: 260px;
+        font-size: 16px
+    }
+
+
+    /* Кнопка плюсика */
+    .buttonHolder_owh{
+        margin-top: 10px
+    }
+
+    .plusButton_owh{
+        font-size: 18px;
+        padding: 5px 12px;
+    }
+
+
+    /* Держатель вопросов */
+    questionHolder_owh{
+
+    }
+
+    /* Отдельный вопрос */
+    .qDiv_owh{
+        justify-content: unset;
+        width: 330px;
+    }
+
+    .numberOfQuestion{
+        margin-right:6px
+    }
+
+    .qInput_owh{
+        width: 260px;
+    }
+
+    .textArea_owh{
+        min-width: 0;
+        max-width: none;
+        width: 200px;
+
+    }
+
+    .answerField_owh{
+        margin-left: -23px;
+    }
+
+    .finalButton_owh{
+        text-align: center;
+        padding-left: 72px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .fields_owh{
+        flex-direction: column;
+    }
+
+
+    .body_owh{
+        margin-top: 15px;
+        padding: 0 6px;
+    }
+
+    .upperTextText_owh{
+        font-size: 16px;
+    }
+
+    .bottomText_owh{
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    .fields_owh{
+        justify-content: unset;
+    }
+
+    .questionField_owh{
+        width: 100%
+    }
+
+    .questionHolder_owh{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .textDiscription_owh{
+        font-size: 17px;
+    }
+    .answerField_owh{
+        margin: 30px 10px 0
+    }
+
+    .radioButtonHolder_owh{
+        margin-top: 14px;
+    }
+
+    .placeToFormTheQuestion_owh{
+        width: 282px;
+        font-size: 17px;
+    }
+
+    .buttonHolder_owh{
+        margin-top: 8px;
+    }
+
+    .plusButton_owh{
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    .qDiv_owh{
+        width: 286px
+    }
+
+    .numberOfQuestion{
+        margin-right: 1px;
+    }
+
+    .qInput_owh{
+        width: 286px;
+        margin-right: -1px;
+        font-size: 12px;
+    }
+
+    .form_radio_group label{
+        font-size: 16px
+    }
+
+    /* .form_radio_group .form_radio_group-item:first-child label{
+        border-radius: 6px;
+    }
+
+    .form_radio_group .form_radio_group-item:last-child label{
+        border-radius: 6px;
+    } */
+
+    .textArea_owh{
+        width: 355px;
+        font-size: 15px;
+    }
+
+    .finalButton_owh{
+        padding-left: 0;
+    }
+
+    .fButton_owh{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .body_owh{
+        margin-top: 0;
+    }
+
+    .twoSides_owh{
+        padding-left: 20px;
+    }
+
+    .upperTextText_owh{
+        font-size: 16px
+    }
+
+    .bottomText_owh{
+        font-size: 9px;
+    }
+
+    .textArea_owh{
+        width: 288px
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    .body_owh{
+        margin-top: 0;
+    }
+
+    .twoSides_owh{
+        padding-left: 20px;
+    }
+
+    .upperTextText_owh{
+        font-size: 12px
+    }
+
+    .bottomText_owh{
+        font-size: 6px;
+    }
+
+    .textArea_owh{
+        width: 185px;
+        font-size: 13px ;
+    }
+
+    .creation_owh{
+        margin-top: 26px;
+    }
+
+    .input_owh{
+        width: 170px;
+        font-size: 13px;
+    }
+
+    .questionField_owh{
+        margin-top: 10px;
+    }
+
+    .textDiscription_owh{
+        font-size: 15px;
+    }
+
+    .placeToFormTheQuestion_owh{
+        width: 189px;
+        font-size: 15px;
+    }
+
+    .qDiv_owh{
+        width: 243px;
+    }
+
+    .form_radio_group label{
+        font-size: 13px;
+    }
+
+    .fButton_owh{
+        font-size: 13px;
+        padding: 0 4px;
+    }
+
+
+} 

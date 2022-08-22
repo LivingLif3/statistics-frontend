@@ -174,3 +174,12 @@ export const deleteQuizTemplate = (template) => async (dispatch) => {
     console.log(e);
   }
 };
+
+export const stopDailyQuiz = (access) => async (dispatch) => {
+  try {
+    let data = await $api.post('/stopRepeat', { access });
+    dispatch(setDailyTemplates(data));
+  } catch (e) {
+    console.log(e);
+  }
+};

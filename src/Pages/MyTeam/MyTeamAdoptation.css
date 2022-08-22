@@ -1,0 +1,292 @@
+@media only screen and (max-width: 1024px){
+    .searcher_s{
+        margin-top: 120px;
+    }
+
+    .resultDiv_s{
+        width: 795px;
+    }
+
+    .result_s{
+        width: 780px;
+    }
+}
+
+@media only screen and (max-width: 870px){
+    .place_s{
+        height: 176px;
+    }
+
+    .searcher_s{
+        margin-top: 100px;
+    }
+
+    .resultDiv_s::-webkit-scrollbar{
+        display: none;
+    }
+
+    .resultDiv_s{
+        width: 675px
+    }
+
+    .result_s{
+        width: 675px;
+    }
+
+    .avatar_s{
+        width: 65px;
+        height: 65px;
+    }
+
+    .lineOne_s{
+        margin-top: 0;
+    }
+
+    .surname_s, .name_s{
+        font-size: 18px;
+    }
+
+    .age_s{
+        font-size: 17px;
+    }
+
+    .id_s{
+        font-size: 20px;
+    }
+
+    .button_s{
+        font-size: 16px;
+    }
+
+    .button_s:first-child{
+        margin-right: 8px;
+    }
+}
+
+
+@media only screen and (max-width: 743px){
+    .js-search:focus{
+        width:250px
+    }
+
+    .js-search{
+        font-size: 14px;
+    }
+
+    .resultDiv_s, .result_s{
+        width: 615px
+    }
+
+    .result_s{
+        height: 85px;
+    }
+
+    .surname_s, .name_s{
+        font-size: 16px;
+    }
+
+    .lable_s{
+        font-size: 13px;
+    }
+
+    .age_s{
+        font-size: 15px;
+    }
+
+    .id_s{
+        font-size: 18px;
+    }
+
+    .button_s:first-child{
+        margin-right: 5px;
+    }
+
+    .button_s{
+        font-size: 15px;
+        padding: 5px 12px;
+    }
+
+}
+
+@media only screen and (max-width: 638px){
+    .resultDiv_s, .result_s{
+        width: 445px;
+    }
+
+    .resultDiv_s{
+        margin-top: 20px;
+    }
+
+    .result_s {
+        height: 65px;
+        margin-bottom: 10px;
+    }
+
+    .avatar_s{
+        width: 55px;
+        height: 55px
+    }
+
+    .surname_s, .name_s{
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    .lable_s{
+        font-size:11px
+    }
+
+    .age_s{
+        font-size: 13px;
+    }
+
+    .id_s{
+        font-size: 15px
+    }
+
+    .button_s{
+        font-size: 13px;
+        padding: 3px 10px
+    }
+
+    .button_s:first-child{
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 476px){
+
+    .js-search:focus{
+        width:170px
+    }
+
+    .js-search{
+        height: 40px;
+        width: 40px;
+        font-size: 10px;
+    }
+
+    .place_s{
+        height: 105px;
+    }
+
+    .searcher_s{
+        margin-top: 42px;
+    }
+
+    .resultDiv_s, .result_s{
+        width: 320px
+    }
+
+    .result_s{
+        height: 50px;
+    }
+
+    .avatar_s{
+        width: 40px;
+        height: 40px
+    }
+
+    .surname_s, .name_s{
+        font-size: 12px
+    }
+
+    .lineTwo_s{
+        margin-top: -8px;
+    }
+
+    .lable_s{
+        font-size: 9px;
+    }
+
+    .age_s{
+        font-size: 11px;
+    }
+
+    .id_s{
+        font-size: 13px
+    }
+
+    buttons_s{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 auto;
+    }
+
+    .button_s{
+        display: block;
+        font-size: 9px;
+        padding: 1px 10px;
+    }
+
+    .button_s:first-child{
+        padding: 1px 23px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .searcher_s{
+        margin-top: 10px;
+    }
+
+    .place_s{
+        height: 55px;
+    }
+
+    .js-search:focus{
+        width: 150px
+    }
+
+    .js-search{
+        font-size: 7px;
+    }
+
+    .resultDiv_s, .result_s{
+        width: 235px;
+        margin-top: 15px;
+    }
+
+    .resultDiv_s{
+        max-height: 600px;
+    }
+
+    .result_s{
+        margin-bottom: -10px;
+    }
+
+    .avatar_s{
+        width: 35px;
+        height: 35px;
+    }
+
+    .surname_s, .name_s{
+        font-size: 10px;
+    }
+
+    .lable_s{
+        font-size: 7px;
+    }
+
+    .age_s{
+        font-size: 9px;
+    }
+
+    idContainer_s{
+        margin-right: 5px;
+    }
+
+    .id_s{
+        font-size: 10px;
+    }
+
+    .button_s{
+        font-size: 6px;
+        padding: 1px 6px;
+    }
+
+    .button_s:first-child{
+        padding: 1px 15px;
+    }
+
+}

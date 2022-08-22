@@ -1,0 +1,88 @@
+/*Large Devices, Wide Screens*/
+
+@media only screen and (max-width:  1200px){
+	.nav_onb{
+		font-size: 15px !important;
+		margin: 12px 20px 12px 50px !important;
+	}
+
+	/* .linkDiv_onb:last-child{
+		padding-right: 20px !important;
+	} */
+
+	.nav_onb::after{
+		top:  80% !important;
+	}
+
+}
+
+/*Medium devices, Desctops*/
+@media only screen and (max-width:  992px){
+	.nav_onb{
+		font-size: 12.5px !important;
+		margin: 12px 10px 12px 50px !important;
+	}
+
+	/* .linkDiv_onb:last-child{
+		padding-right: 25px !important;
+	} */
+
+	.nav_onb::after{
+		top:  70% !important;
+	}
+
+}
+
+/*Small devices, tablets*/ 
+@media only screen and (max-width:  768px){
+	/*.header_onb{
+		max-wigth:  481px;
+		overflow: auto;
+	}*/
+
+	.nav_onb{
+		font-size: 10px !important;
+		margin: 12px 10px 12px 22px !important;
+	}
+
+	.nav_onb::after{
+		top:  50% !important;
+	}
+
+}
+
+/*Extra small devices, phones*/
+@media only screen and (max-width:  480px){
+
+	.linkDiv_onb{
+		padding-right: 0px !important;
+	}
+
+	.nav_onb{
+		font-size: 7px !important;
+		margin: 8px 3px 12px 20px !important;
+		padding: 4px;
+	}
+
+	.nav_onb::after{
+		top:  50% !important;
+	}
+}
+
+
+/*Custom, iphone Retina*/
+@media only screen and (max-width:  320px){
+	.header_onb{
+		overflow: auto !important;
+	}
+
+	.nav_onb{
+		font-size: 7px !important;
+		margin: 8px 10px 12px 4px !important;
+		padding: 4px !important;
+	}
+
+	.nav_onb::after{
+		top:  50% !important;
+	}
+}

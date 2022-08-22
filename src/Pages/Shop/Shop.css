@@ -85,7 +85,8 @@
 
 .ld_SH{
     padding-right: 140px;
-    padding-top: 46px;
+    padding-top: 4px;
+
 }
 
 .l_SH{
@@ -289,5 +290,11 @@
 .texting_SH{
     margin-top: 20px;
     font-size: 20px;
+}
+
+.Ddivider_SH{
+    width:  120px;
+    height:  3px;
+    margin: 27px auto 0;
 }
 

@@ -4,14 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import Modal from '../../Components/Modal/Modal';
 import NavBar from '../../Components/NavBar/NavBar';
 import UserCardForTeam from '../../Components/UserCard/UserCardForTeam';
-import $api from '../../http';
 import { getTeamPlayers } from '../../redux-store/QuizReducer';
 import { createTeam, deletePlayer, getTeam, getTeamTrainers } from '../../redux-store/TeamReducer';
 import { checkAuth } from '../../redux-store/UserReducer';
 import { MAIN_ROUTE } from '../../utils/consts';
 import './TeamPage.css';
-// import CardInCollection from "../../styles/teamStyles/myTeamFormations/myTeamCard";
-// import NavBar from "./navLink";
+import './TeamPageAdoptation.css';
 
 const TeamPage = ({
   createTeam,
@@ -153,7 +151,7 @@ const TeamPage = ({
                     height={trainer.height}
                     weight={trainer.weight}
                     deletePlayer={deletePlayer}
-                    teamId={team._id}
+                    teamId={trainer.team}
                     myRole={role}
                     onDelete={onDelete}
                   />

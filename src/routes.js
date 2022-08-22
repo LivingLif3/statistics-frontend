@@ -9,6 +9,7 @@ import CustomResultPage from './Pages/CustomResultPage/CustomResultPage';
 import Main from './Pages/Main/Main';
 import MyTeam from './Pages/MyTeam/MyTeam';
 import New from './Pages/New/New';
+import RefreshPassword from './Pages/RefreshPassword/RefreshPassword';
 import Registration from './Pages/Registration/Registration';
 import ResultPage from './Pages/ResultPage/ResultPage';
 import SendQuiz from './Pages/SendQuiz/SendQuiz';
@@ -24,6 +25,7 @@ import {
   MAIN_ROUTE,
   MY_TEAM_ROUTE,
   NEW_ROUTE,
+  REFRESH_PASSWORD_ROUTE,
   REGISTRATION_ROUTE,
   RESULTS_ROUTE,
   SEND_QUIZ_ROUTE,
@@ -57,6 +59,10 @@ export const publicRoutes = [
   {
     path: TEST_PAINT,
     Component: <Paint />,
+  },
+  {
+    path: REFRESH_PASSWORD_ROUTE,
+    Component: <RefreshPassword />,
   },
 ];
 

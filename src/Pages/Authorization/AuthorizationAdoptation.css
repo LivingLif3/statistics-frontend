@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1399px){
+	.holder_su{
+		transform: scale(.8);
+	}
+}
+
+@media only screen and (max-width:  532px){
+	.holder_su{
+		transform: scale(.7);
+	}
+}
+
+@media only screen and (max-width:  425px){
+	.holder_su{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		transform: scale(.6);
+	}
+}

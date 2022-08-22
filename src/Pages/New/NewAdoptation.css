@@ -1,0 +1,309 @@
+@media only screen and (max-width: 1024px){
+    .textOfTheHeader_n{
+        font-size: 23px
+    }
+
+    .choiceHolder_n{
+        padding: 40px;
+    }
+
+    .nameHolder_nm{
+        font-size: 17px;
+        margin: 17px
+    }
+
+    .devider_n{
+        width: 111px;
+    }
+
+    /*Plugs styles*/
+
+    .plugTextH3_npp{
+        font-size:18px
+    }
+
+    .plugText_npp{
+        font-size: 16px
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .body_n{
+        margin-top: 30px;
+    }
+
+    .choiceHolder_n{
+        padding-top: 20px
+    }
+
+    .nameHolder_nm{
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .deviderHolder_n{
+        margin-top: 20px;
+    }
+
+    .devider_n{
+        width: 95px
+    }
+
+    .answerSectionHolder_qb{
+        margin-bottom: 35px;
+    }
+
+    .accordion_qb{
+        font-size: 16px;
+        width: 670px
+    }
+
+    .keyboardButton_ak{
+        padding: 17px 23px;
+        font-size: 16px;
+    }
+
+    .bottomButtonHolder_n{
+        margin-top: 40px
+    }
+
+    .buttonToSend_n{
+        padding: 10px 24px;
+        font-size: 18px;
+    }
+
+    .answerInput_ai{
+        width: 335px;
+        font-size: 17px;
+    }
+
+    /*Plugs styles*/
+
+    .plugTextH3_npp{
+        font-size:16px;
+        margin-bottom: 1px;
+        padding-top: 50px;
+    }
+
+    .plugText_npp{
+        font-size: 14px
+    }
+
+    .textOfPlug_asp{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .body_n{
+        margin-top: 0px;
+    }
+
+    .textOfTheHeader_n{
+        font-size: 18px;
+    }
+
+    .choiceHolder_n{
+        padding-bottom: 20px;
+    }
+
+    .nameHolder_nm{
+        margin: 10px;
+        padding: 10px 11px;
+        font-size: 15px;
+    }
+
+    .devider_n{
+        width: 85px
+    }
+
+    .answerSectionHolder_qb{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordion_qb{
+        width: 466px;
+        font-size: 12px;
+    }
+
+    .keyboardButton_ak{
+        padding: 10px 17px;
+        font-size: 12px;
+        margin: 2px;
+    }
+
+    .bottomButtonHolder_n{
+        margin-top: 5px
+    }
+
+    .buttonToSend_n{
+        font-size: 14px;
+    }
+
+    .answerInput_ai{
+        width: 223px;
+        font-size: 14px;
+    }
+
+    /*Plugs styles*/
+
+    .plugTextH3_npp{
+        font-size:13px;
+        margin-bottom: 1px;
+        padding-top: 20px;
+    }
+
+    .plugText_npp{
+        font-size: 11px
+    }
+
+    .textOfPlug_asp{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .body_n{
+        margin-top: -20px;
+    }
+
+    .textOfTheHeader_n{
+        font-size: 13px;
+    }
+
+    .choiceHolder_n{
+        padding-bottom: 20px;
+    }
+
+    .nameHolder_nm{
+        margin: 8px 6px;
+        padding: 8px 7px;
+        font-size: 8px;
+    }
+
+    .deviderHolder_n{
+        margin-top: -4px;
+        margin-bottom: 20px;
+    }
+
+    .devider_n{
+        width: 55px;
+        height: 2px
+    }
+
+    .answerSectionHolder_qb{
+        margin-bottom: 14px
+    }
+
+    .accordion_qb{
+        width: 295px;
+        font-size: 9px;
+        padding: 10px
+    }
+
+    .answerKeyboard_ak{
+        padding: 3px;
+    }
+
+    .keyboardButton_ak{
+        padding: 5px 8px;
+        font-size: 11px;
+        margin: 2px;
+    }
+
+    .buttonToSend_n{
+        font-size: 11px;
+        padding: 7px 13px;
+    }
+
+    .answerInput_ai{
+        width: 120px;
+        font-size: 12px;
+        padding: 2px 11px;
+        border-bottom: 1px solid rgb(29, 30, 33);
+    }
+
+    /*Plugs styles*/
+
+    .plugTextH3_npp{
+        font-size:11px;
+        margin-bottom: 1px;
+        padding-top: 20px;
+    }
+
+    .plugText_npp{
+        font-size: 8px
+    }
+
+    .textOfPlug_asp{
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .body_n{
+        padding: 10px 11px 20px;
+    }
+
+    .choiceSection_n{
+        margin-top: -10px
+    }
+
+    .choiceHolder_n{
+        padding: 20px 10px 20px;
+    }
+
+    .deviderHolder_n{
+        margin-bottom: 18px
+    }
+
+    .devider_n{
+        width: 45px;
+        height: 2px
+    }
+
+    .accordion_qb{
+        width: 193px;
+        font-size: 6px;
+        padding: 8px 4px;
+    }
+
+    .keyboardButton_ak{
+        padding: 2px 4px;
+        font-size: 11px
+    }
+
+    .buttonToSend_n{
+        font-size: 10px;
+        padding: 4px 12px;
+    }
+
+    .answerInput_ai{
+        width: 100px;
+        font-size: 9px;
+        padding: 2px 11px;
+        border-bottom: 1px solid rgb(29, 30, 33);
+    }
+
+    /*Plugs styles*/
+
+    .plugTextH3_npp{
+        font-size:8px;
+        margin-bottom: 1px;
+        padding-top: 20px;
+    }
+
+    .plugText_npp{
+        font-size: 5px
+    }
+
+    .textOfPlug_asp{
+        font-size: 8px;
+        padding-bottom: 20px;
+    }
+}

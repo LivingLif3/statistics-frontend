@@ -1,0 +1,405 @@
+/*Large Devices, Wide Screens*/
+
+@media only screen and (max-width:  1200px){
+    .body_ma{
+		margin-top: 0;
+	}
+
+
+	.blockWithName_ma{
+		height: 300px;
+	}
+
+	.kivano_ma {
+		font-size:  60px;
+	}
+
+	.sport_ma {
+		font-size:  45px;
+	}
+
+	.tag_ma, .headerOfTheLsatDivText_ma{
+		font-size: 25px;
+	}
+
+	.textHolderOfTheLastDivText_ma{
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+
+	.TextText_ma{
+		font-size: 15px;
+	}
+
+	.devider_ma{
+		width:  100px;
+	}
+
+	.upperTextHplder_ma{
+		padding: 0 50px;
+	}
+
+
+	.textSectionHolder_ma{
+		font-size: 18px;
+		margin-top: 18px;
+	}
+
+
+	.footer_ma{
+		height: 120px;
+		padding: 0;
+	}
+
+	.kivanoLink_ma{
+		font-size: 30px;
+	}
+
+	.textOfSocial_ma{
+		font-size: 20px;
+	}
+
+	.iconHolder_ma{
+		font-size: 30px;
+	}
+
+	.linkToSocial{
+		margin: 0 10px;
+	}
+}
+
+/*Medium devices, Desctops*/
+@media only screen and (max-width:  992px){
+	.body_ma{
+		margin-top: 0;
+	}
+
+
+	.blockWithName_ma{
+		height: 300px;
+	}
+
+	.kivano_ma {
+		font-size:  50px;
+	}
+
+	.sport_ma {
+		font-size:  35px;
+	}
+
+	.tag_ma, .headerOfTheLsatDivText_ma{
+		font-size: 15px;
+	}
+
+	.textHolderOfTheLastDivText_ma{
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+
+	.TextText_ma{
+		font-size: 15px;
+	}
+
+	.devider_ma{
+		width:  100px;
+	}
+
+	.upperTextHplder_ma{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 40px;
+		width:  100%;
+	}
+
+
+	.textSectionHolder_ma{
+		font-size: 13px;
+		margin-top: 18px;
+		overflow: hidden;
+		width:  100%;
+	}
+
+
+	.footer_ma{
+		height: 110px;
+		padding: 0;
+	}
+
+	.kivanoLink_ma{
+		font-size: 25px;
+	}
+
+	.textOfSocial_ma{
+		font-size: 17px;
+	}
+
+	.iconHolder_ma{
+		font-size: 25px;
+	}	
+}
+
+/*Small devices, tablets*/ 
+@media only screen and (max-width:  768px){
+	.body_ma{
+		margin-top: 0;
+	}
+
+
+	.blockWithName_ma{
+		height: 300px;
+	}
+
+	.kivano_ma {
+		font-size:  40px;
+	}
+
+	.sport_ma {
+		font-size:  25px;
+	}
+
+	.tag_ma, .headerOfTheLsatDivText_ma{
+		font-size: 15px;
+	}
+
+	.textHolderOfTheLastDivText_ma{
+		padding: 10px;
+	}
+
+	.TextText_ma{
+		font-size: 11px;
+	}
+
+
+	.deviderHolder_ma{
+		margin: 20px 0 ;
+	}
+
+	.devider_ma{
+		width:  100px;
+	}
+
+	.upperTextHplder_ma{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 20px;
+		width:  100%;
+	}
+
+
+	.textSectionHolder_ma{
+		font-size: 11px;
+		margin-top: 9px;
+		overflow: hidden;
+		width:  100%;
+	}
+
+
+	.footer_ma{
+		height: 90px;
+		padding: 0;
+	}
+
+	.kivanoLink_ma{
+		font-size: 18px;
+	}
+
+	.textOfSocial_ma{
+		font-size: 14px;
+	}
+
+	.iconHolder_ma{
+		font-size: 18px;
+	}
+
+	.m-l-10_ma{
+		padding-left: 5px;
+	}
+
+	.m-r-10_ma{
+		padding-right: 5px;
+	}
+}
+
+/*Extra small devices, phones*/
+@media only screen and (max-width:  480px){
+	.firstSection_ma{
+		height:  95vh;
+	}
+
+	.body_ma{
+		margin-top: 0;
+	}
+
+
+	.blockWithName_ma{
+		height: 250px;
+	}
+
+	.kivano_ma {
+		font-size:  30px;
+	}
+
+	.sport_ma {
+		font-size:  18px;
+	}
+
+	.tag_ma, .headerOfTheLsatDivText_ma{
+		font-size: 12px;
+	}
+
+	.textHolderOfTheLastDivText_ma{
+		padding: 5px;
+		margin-top: 5px;
+	}
+
+	.TextText_ma{
+		font-size: 9px;
+	}
+
+
+	.deviderHolder_ma{
+		margin: 20px 0 ;
+	}
+
+	.devider_ma{
+		width:  60px;
+		height: 2px;
+	}
+
+	.upperTextHplder_ma{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 20px;
+		width:  100%;
+	}
+
+
+	.textSectionHolder_ma{
+		font-size: 9px;
+		margin-top: 5px;
+		overflow: hidden;
+		width:  100%;
+	}
+
+
+	.footer_ma{
+		height: 60px;
+		padding: 0;
+	}
+
+	.kivanoLink_ma{
+		font-size: 14px;
+	}
+
+	.textOfSocial_ma{
+		font-size: 10px;
+	}
+
+	.iconHolder_ma{
+		font-size: 18px;
+	}
+
+	.m-l-10_ma{
+		padding-left: 5px;
+	}
+
+	.m-r-10_ma{
+		padding-right: 5px;
+	}
+}
+
+@media only screen and (max-width:  425px){
+	.section_ma:first-child{
+		height: 50vh
+	}
+}
+
+/*Custom, iphone Retina*/
+@media only screen and (max-width:  320px){
+
+	.firstSection_ma{
+		height:  95vh;
+	}
+
+
+	.body_ma{
+		margin-top: 0;
+	}
+
+
+	.blockWithName_ma{
+		height: 250px;
+	}
+
+	.kivano_ma {
+		font-size:  30px;
+	}
+
+	.sport_ma {
+		font-size:  18px;
+	}
+
+	.tag_ma, .headerOfTheLsatDivText_ma{
+		font-size: 9px;
+	}
+
+	.textHolderOfTheLastDivText_ma{
+		padding: 5px;
+		margin-top: 3px;
+	}
+
+	.TextText_ma{
+		font-size: 6px;
+	}
+
+
+	.deviderHolder_ma{
+		margin: 20px 0 ;
+	}
+
+	.devider_ma{
+		width:  30px;
+		height: 1px;
+	}
+
+	.upperTextHplder_ma{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 20px;
+		width:  100%;
+	}
+
+
+	.textSectionHolder_ma{
+		font-size: 6px;
+		margin-top: 5px;
+		overflow: hidden;
+		width:  100%;
+	}
+
+
+	.footer_ma{
+		height: 40px;
+		padding: 0;
+	}
+
+	.kivanoLink_ma{
+		font-size: 10px;
+	}
+
+	.textOfSocial_ma{
+		font-size: 6px;
+	}
+
+	.iconHolder_ma{
+		font-size: 15px;
+	}
+
+	.m-l-10_ma{
+		padding-left: 5px;
+	}
+
+	.m-r-10_ma{
+		padding-right: 5px;
+	}
+}

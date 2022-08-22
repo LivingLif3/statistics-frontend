@@ -10,6 +10,7 @@ import {
   RESULTS_ROUTE,
 } from '../../utils/consts';
 import './StateFormNavBar.css';
+import './StateFormNavBarAdoptation.css';
 
 const StateFormNavBar = () => {
   let navigator = useNavigate();

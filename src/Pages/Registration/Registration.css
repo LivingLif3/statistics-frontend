@@ -1,24 +1,36 @@
 
 .Form_reg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
     width: 100%;
     height: 100vh;
     /* background: rgb(52, 56, 61); */
     background: rgb(255, 255, 255);
-	padding: 60px;
+    padding-bottom: 120px;
 }
+
+.centralHolder_reg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.h1Holder_reg{
+	margin-bottom: 20px;
+}
+
 .H1_reg{
 	color: rgb(0, 0, 0);
-	margin: 200px auto;
 	width: 200px;
-    margin-left: calc(50% - 190px);
 	text-align: center;
     padding-right: 260px;
 }
 .Wrapper_reg{
 	width: 320px;
     margin: 0 auto;
-    margin-left: calc(50% - 160px);
-	margin-top: -165px;
+
 }
 
 /* === Sign in Form === */
@@ -85,7 +97,7 @@
     padding-right: 4px;
 }
 .Signin_reg button[type="submit"]:hover{
-	color: rgb(0, 126, 165);
+	color: rgba(226, 97, 29, 1);
 	text-shadow: 0 0 10px rgb(0, 126, 165);
 	cursor: pointer;
 }
@@ -103,5 +115,6 @@
 }
 .Signin_reg p > span:hover{
 	border-bottom: 1px solid;
-    cursor: pointer;
+	cursor: pointer;
+	transition: 0.5s;
 }

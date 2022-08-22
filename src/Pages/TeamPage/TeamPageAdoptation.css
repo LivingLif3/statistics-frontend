@@ -1,0 +1,174 @@
+@media only screen and (max-width: 1390px){
+    .playerHolder_mt{
+        flex-wrap: nowrap;
+        max-width: 965px;
+        overflow-x: scroll;
+        overflow-y: unset;
+        
+        padding: 5px 40px;
+        padding-bottom: 10px;
+        height: 429px
+    }
+
+    .card_ocfmt{
+        width: 280px;
+        min-width: 280px;
+        height: 370px
+    }
+
+    .curveOne_ocb{
+        height: 143px;
+        width: 128px
+    }
+
+    .deliteHolder_ocfmt{
+        width: 55px
+    }
+
+    .photoHolder_po{
+        transform: scale(.8);
+        left: 47.03px;
+        top: 11.01px
+    }
+
+    .curveTwo_ocb{
+        transform: scale(.8);
+        right: -16px
+    }
+
+    .infoPartHolder_ocf{
+        top: 226.01px
+    }
+
+    .textOfnameHolder_ocb{
+        font-size: 16px;
+    }
+
+    .devider_ocb{
+        margin-bottom: 10px;
+    }
+
+    .field_ocf{
+        transform: scale(.9);
+        margin-bottom: 6px;
+    }
+
+    .curveThree_ocb{
+        transform: scale(.8);
+        bottom: -45px;
+        left: -12px
+    }
+
+    .card_ocfmt{
+        margin: 0 10px 10px 10px
+    }
+}
+
+
+@media only screen and (max-width: 1024px){
+
+    .counterDiv_mt{
+        margin-left: 166px
+    }
+
+    .playerHolder_mt{
+        padding: 5px 20px;
+        height: 390px;
+        margin-top: 10px
+    }
+
+    .front_ocfmt{
+        transform: scale(.8);
+    }
+
+    .card_ocfmt{
+        margin: 0 -36px 10px 10px
+    }
+
+    .card_ocfmt:first-child{
+        margin-left: -30px;
+    }
+
+    .input_mt{
+        width: 260px;
+        font-size: 17px;
+    }
+
+    .counter_mt{
+        font-size: 17px;
+    }
+
+    .textOfTheSecondGroup_mt{
+        font-size: 20px
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .firstGroupOfBloks_mt{
+        align-items: center;
+    }
+
+    .counterDiv_mt{
+        margin-left: 0
+    }
+
+    .teaName_mt{
+        margin: 0 40px;
+
+    }
+
+    .input_mt{
+        width: 180px;
+        font-size: 13px;
+    }
+
+    .counter_mt{
+        font-size: 13px;
+    }
+
+    .body_mt{
+        margin-top: 10px;
+    }
+
+    .secondGroupOfBlocks_mt{
+        margin-top: 20px
+    }
+
+    .textOfTheSecondGroup_mt{
+        font-size: 17px;
+    }
+
+    .playerHolder_mt{
+        margin-top: -46px
+    }
+
+    .card_ocfmt{
+        transform: scale(.8);
+        margin-right: -91px;
+    }
+
+    .card_ocfmt:first-child{
+        margin-left: -68px
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .secondGroupOfBlocks_mt{
+        padding: 5px 20px;
+    }
+
+    .teaName_mt{
+        margin: 0 20px;
+    }
+
+    .input_mt{
+        width: 135px
+    }
+
+    .input_mt, .counter_mt{
+        font-size: 11px;
+    }
+
+
+}

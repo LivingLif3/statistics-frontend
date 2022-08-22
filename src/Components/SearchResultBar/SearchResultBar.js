@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './SearchResultBar.css';
 import Modal from '../Modal/Modal';
+import { SmileFilled } from '@ant-design/icons';
 
-const SearchResultBar = ({ name, surname, age, id, pushPlayer, pushTrainer, teamId }) => {
+const SearchResultBar = ({ img, name, surname, age, id, pushPlayer, pushTrainer, teamId }) => {
   let [active, setActive] = useState(false);
   let onPushPlayer = () => {
     setActive(false);
@@ -12,9 +13,14 @@ const SearchResultBar = ({ name, surname, age, id, pushPlayer, pushTrainer, team
     setActive(false);
     pushTrainer(id, teamId);
   };
+  let avatar = img ? `http://localhost:8000/photos/${img}` : null;
   return (
     <div className="result_s">
-      <img src="#" alt="avatar" className="avatar_s" />
+      {avatar ? (
+        <img src={avatar} alt="avatar" className="avatar_s" />
+      ) : (
+        <SmileFilled style={{ fontSize: '80px' }} />
+      )}
       <div className="info_s">
         <p className="lineOne_s">
           <span className="surname_s">{surname}</span>

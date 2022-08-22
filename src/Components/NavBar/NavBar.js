@@ -9,6 +9,7 @@ import {
   TEAM_ROUTE,
 } from '../../utils/consts';
 import './NavBar.css';
+import './NavBarAdoptation.css';
 
 const NavBar = ({ role }) => {
   let navigator = useNavigate();

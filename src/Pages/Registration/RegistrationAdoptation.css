@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1399px){
+	.centralHolder_reg{
+		transform: scale(.8);
+	}
+}
+
+@media only screen and (max-width:  812px){
+
+	.MStextc{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width:  480px){
+	.centralHolder_reg{
+		transform: scale(.7);
+	}
+
+	.MStextc{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width:  425px){
+	.centralHolder_reg{
+		transform: scale(.6);
+	}
+}

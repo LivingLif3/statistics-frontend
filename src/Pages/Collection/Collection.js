@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Collection.css';
+import './CollectionAdaptation.css';
 import StateFormNavBar from '../../Components/StateFormNavBar/StateFormNavBar';
 import ElementOfCollection from '../../Components/ElementOfCollection/ElementOfCollection';
 import DailyElementOfCollection from '../../Components/ElementOfCollection/DailyElementOfCollection';
@@ -13,6 +14,7 @@ const Colletion = ({ quizTemplates, getDailyQuizes, dailyQuizes, deleteQuizTempl
   useEffect(() => {
     getDailyQuizes();
   }, []);
+  console.log(dailyQuizes);
   return (
     <div className="page_cp">
       <StateFormNavBar />
@@ -39,10 +41,11 @@ const Colletion = ({ quizTemplates, getDailyQuizes, dailyQuizes, deleteQuizTempl
             {dailyQuizes
               ? dailyQuizes.map((quiz) => (
                   <DailyElementOfCollection
-                    key={quiz._id}
-                    id={quiz._id}
-                    title={quiz.title}
-                    text={quiz.description}
+                    key={quiz.template._id}
+                    id={quiz.template._id}
+                    title={quiz.template.title}
+                    text={quiz.template.description}
+                    access={quiz.access}
                   />
                 ))
               : 'Пусто'}
