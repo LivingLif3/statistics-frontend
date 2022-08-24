@@ -9,6 +9,7 @@ import './UserCard.css';
 import PhotoPart from './CardComponents/PhotoPart';
 // import OriginalBackInfoHolder from './originalCardComponents/backInfoHolder';
 import OriginalFrontInfoHolder from './CardComponents/FrontInfoHolder';
+import { APP_URL } from '../../http';
 
 const UserCardForTeam = ({
   id,
@@ -28,7 +29,7 @@ const UserCardForTeam = ({
   let onDeletePlayer = () => {
     onDelete(id);
   };
-  let avatar = img ? `http://localhost:8000/photos/${img}` : null;
+  let avatar = img ? `${APP_URL}/photos/${img}` : null;
   return (
     <div className="card_ocfmt">
       <div className="front_ocfmt">

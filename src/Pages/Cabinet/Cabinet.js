@@ -6,7 +6,7 @@ import { DownloadOutlined } from '@ant-design/icons';
 import './Cabinet.css';
 import './CabinetAdaptation.css';
 import UserCard from '../../Components/UserCard/UserCard';
-import { API_URL } from '../../http';
+import { APP_URL } from '../../http';
 // import OriginalNavBar from "./originalNavLink";
 
 const Cabinet = ({ updateData, img, updateAvatar, role }) => {
@@ -19,7 +19,7 @@ const Cabinet = ({ updateData, img, updateAvatar, role }) => {
       updateAvatar(image);
     }
   }, [image]);
-  let avatar = img ? `http://localhost:8000/photos/${img}` : null;
+  let avatar = img ? `${APP_URL}/photos/${img}` : null;
   return (
     <div className="page_Cab">
       <NavBar role={role} />

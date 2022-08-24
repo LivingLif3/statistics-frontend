@@ -1,4 +1,4 @@
-/*  
+ 
 @import url(
     'https://fonts.googleapis.com/css2?family=Lobster&display=swap'); 
       
@@ -14,7 +14,7 @@
     }
       
     h1 {
-      /* font-family: 'Lobster', cursive; 
+       font-family: 'Lobster', cursive; 
       font-size: 50px;
       color: #4644f0;
     }
@@ -24,7 +24,7 @@
       height: 820px;
       border: 2px solid #808080;
       position: relative;
-      /* background-color: white; 
+      background-color: white; 
       background-image: url('../assets/footballField.jpg');
       background-repeat: no-repeat;
       background-position: bottom;
@@ -71,4 +71,26 @@
 
     .pencil:hover {
       cursor: pointer;
-    } */
+    }
+
+    .mainDrag {
+      background-color: cornflowerblue;
+      border: 2px solid black;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .enemyDrag {
+      background-color: red;
+      border: 2px solid black;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }

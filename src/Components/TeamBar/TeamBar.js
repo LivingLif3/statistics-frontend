@@ -1,5 +1,6 @@
 import { SmileFilled } from '@ant-design/icons';
 import React, { useEffect, useState } from 'react';
+import { APP_URL } from '../../http';
 import './TeamBar.css';
 
 const TeamBar = ({ name, surname, id, img, usersState, setUsersState }) => {
@@ -23,7 +24,7 @@ const TeamBar = ({ name, surname, id, img, usersState, setUsersState }) => {
       setActive(false);
     }
   }, [usersState.length]);
-  let avatar = img ? `http://localhost:8000/photos/${img}` : null;
+  let avatar = img ? `${APP_URL}/photos/${img}` : null;
   return (
     <div className={`result_tb ${active && 'activeBar'}`} onClick={onClick}>
       {avatar ? (

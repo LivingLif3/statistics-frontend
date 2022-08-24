@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './SearchResultBar.css';
 import Modal from '../Modal/Modal';
 import { SmileFilled } from '@ant-design/icons';
+import { APP_URL } from '../../http';
 
 const SearchResultBar = ({ img, name, surname, age, id, pushPlayer, pushTrainer, teamId }) => {
   let [active, setActive] = useState(false);
@@ -13,7 +14,7 @@ const SearchResultBar = ({ img, name, surname, age, id, pushPlayer, pushTrainer,
     setActive(false);
     pushTrainer(id, teamId);
   };
-  let avatar = img ? `http://localhost:8000/photos/${img}` : null;
+  let avatar = img ? `${APP_URL}/photos/${img}` : null;
   return (
     <div className="result_s">
       {avatar ? (

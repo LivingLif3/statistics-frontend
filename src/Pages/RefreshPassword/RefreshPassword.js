@@ -4,17 +4,23 @@ import { useNavigate } from 'react-router-dom';
 import './RefreshPassword.css';
 import './RefreshPasswordAdoptation.css';
 import { LOGIN_ROUTE, REGISTRATION_ROUTE } from '../../utils/consts';
+import ModalForRefreshPassword from './ModalForRefreshPassword/ModalForRefreshPassword';
 
 const RefreshPassword = () => {
   let [email, setEmail] = useState('');
   let [password, setPassword] = useState('');
+  let [active, setActive] = useState(false);
 
   let navigator = useNavigate();
 
   const refreshPassword = async () => {
     try {
       if (email.length > 0 && password.length > 0) {
-        await $api.post('/refreshPassword', { email, password });
+        await $api.post('/refreshPassword', { email, password }).then((response) => {
+          if (response.status === 200) {
+            setActive(true);
+          }
+        });
         setEmail('');
         setPassword('');
       } else {
@@ -52,12 +58,20 @@ const RefreshPassword = () => {
               &#xf0da;
             </button>
             <p>
-              <span onClick={() => navigator(LOGIN_ROUTE)}>Вход</span> <br />{' '}
+              <span onClick={() => navigator(LOGIN_ROUTE)}>Вход</span> <br />
               <span onClick={() => navigator(REGISTRATION_ROUTE)}>Регистрация</span>
             </p>
           </div>
         </div>
       </div>
+      <ModalForRefreshPassword active={active} setActive={setActive}>
+        <p className="modalText">К Вам на почту пришло письмо с подтерждением. Подтвердите его!</p>
+        <div className="modalButtonHolder">
+          <button className="modalButton" onClick={() => setActive(false)}>
+            Хорошо
+          </button>
+        </div>
+      </ModalForRefreshPassword>
     </div>
   );
 };

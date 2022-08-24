@@ -16,7 +16,7 @@ const CheckEmail = ({ confirmHash }) => {
   return (
     <div className="MSform">
       <div className="MSformc">
-        <div class="MSupperTextBockc">
+        <div className="MSupperTextBockc">
           <h2 className="MStextc">
             На Вашу почту было отправлено письмо <br /> с подтверждением
           </h2>
