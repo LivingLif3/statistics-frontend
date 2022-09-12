@@ -14,6 +14,7 @@ import Registration from './Pages/Registration/Registration';
 import ResultPage from './Pages/ResultPage/ResultPage';
 import SendQuiz from './Pages/SendQuiz/SendQuiz';
 import Shop from './Pages/Shop/Shop';
+import Soon from './Pages/Soon/Soon';
 import Support from './Pages/Support/Support';
 import TeamPage from './Pages/TeamPage/TeamPage';
 import {
@@ -30,6 +31,7 @@ import {
   RESULTS_ROUTE,
   SEND_QUIZ_ROUTE,
   SHOP_ROUTE,
+  SOON_ROUTE,
   SUPPORT_ROUTE,
   TEAM_ROUTE,
   TEST_PAINT,
@@ -63,6 +65,10 @@ export const publicRoutes = [
   {
     path: REFRESH_PASSWORD_ROUTE,
     Component: <RefreshPassword />,
+  },
+  {
+    path: SOON_ROUTE,
+    Component: <Soon />,
   },
 ];
 

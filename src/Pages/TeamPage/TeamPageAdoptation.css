@@ -26,10 +26,8 @@
     }
 
     .photoHolder_po{
-        transform: scale(.8);
-        left: 47.03px;
-        top: 11.01px
-    }
+       transform: scale(.8);
+    } 
 
     .curveTwo_ocb{
         transform: scale(.8);

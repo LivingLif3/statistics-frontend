@@ -8,6 +8,7 @@ import {
   MAIN_ROUTE,
   REGISTRATION_ROUTE,
   SHOP_ROUTE,
+  SOON_ROUTE,
   SUPPORT_ROUTE,
   TEAM_ROUTE,
 } from '../../utils/consts';
@@ -36,7 +37,9 @@ const OriginalNavBar = ({ isAuth }) => {
         <div className="nav_onb" onClick={() => navigator(SUPPORT_ROUTE)}>
           Помощь
         </div>
-        <div className="nav_onb">Скоро</div>
+        <div className="nav_onb" onClick={() => navigator(SOON_ROUTE)}>
+          Скоро
+        </div>
       </div>
     </div>
   );

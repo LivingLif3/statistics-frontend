@@ -6,7 +6,6 @@ import { createTemplateQuiz } from '../../redux-store/QuizReducer';
 import './CreateQuizAdaptation.css';
 import './CreateQuiz.css';
 import QuestionFormationBar from './QuestionFormationBar';
-// import StateFormNavBar from "./stateFormNavBar";
 
 const CreateQuiz = ({ createTemplateQuiz }) => {
   let [questions, setQuestions] = useState([]);

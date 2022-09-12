@@ -35,7 +35,7 @@ const UserCardForTeam = ({
       <div className="front_ocfmt">
         <img className="curveOne_ocb" src={CurveOne} draggable={false} />
         <div className={myRole === 'TRAINER' && `deliteHolder_ocfmt`} onClick={onDeletePlayer}>
-          <DeleteOutlined />
+          {deletePlayer && <DeleteOutlined />}
         </div>
         <PhotoPart avatar={avatar} />
         <img className="curveTwo_ocb" src={CurveTwo} draggable={false} />

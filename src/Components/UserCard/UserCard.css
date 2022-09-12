@@ -287,8 +287,7 @@
     position: relative;
     width: 184.5px;
     height: 195px;
-    left: 83.03px;
-    top: 27.01px;
+    margin: auto;
     /* background-color: aqua; */
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));

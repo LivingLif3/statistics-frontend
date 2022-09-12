@@ -3,9 +3,24 @@ import './SearchResultBar.css';
 import Modal from '../Modal/Modal';
 import { SmileFilled } from '@ant-design/icons';
 import { APP_URL } from '../../http';
+import UserCardForTeam from '../UserCard/UserCardForTeam';
+import ModalWithCard from '../../Pages/MyTeam/ModalWithCard/ModalWithCard';
 
-const SearchResultBar = ({ img, name, surname, age, id, pushPlayer, pushTrainer, teamId }) => {
+const SearchResultBar = ({
+  img,
+  name,
+  surname,
+  age,
+  id,
+  pushPlayer,
+  pushTrainer,
+  teamId,
+  role,
+  height,
+  weight,
+}) => {
   let [active, setActive] = useState(false);
+  let [activeCard, setActiveCard] = useState(false);
   let onPushPlayer = () => {
     setActive(false);
     pushPlayer(id, teamId);
@@ -36,7 +51,9 @@ const SearchResultBar = ({ img, name, surname, age, id, pushPlayer, pushTrainer,
         <h1 className="id_s">#{id.slice(0, 8)}...</h1>
       </div>
       <div className="buttons_s">
-        <button className="button_s">Карта</button>
+        <button className="button_s" onClick={() => setActiveCard(true)}>
+          Карта
+        </button>
         <button className="button_s" onClick={() => setActive(true)}>
           {/* {pushPlayer(id, teamId)} */}В команду
         </button>
@@ -54,6 +71,19 @@ const SearchResultBar = ({ img, name, surname, age, id, pushPlayer, pushTrainer,
           </button>
         </div>
       </Modal>
+      <ModalWithCard active={activeCard} setActive={setActiveCard}>
+        <UserCardForTeam
+          key={id}
+          id={id}
+          img={img}
+          name={name}
+          surname={surname}
+          role={role}
+          age={age}
+          height={height}
+          weight={weight}
+        />
+      </ModalWithCard>
     </div>
   );
 };

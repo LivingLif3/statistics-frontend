@@ -1,0 +1,451 @@
+
+
+
+.firstPage_s1{
+    width: 100%;
+    height: 100vh;
+}
+
+.section_s1{
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.noPadding_s1{
+    padding: 0;
+}
+
+.picturePlace_s1{
+    width: 100%;
+    height: 97vh;
+    position: absolute;
+    left: 0;
+}
+
+.textField_s1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+    left: -390px;
+    text-align: center;
+    color: rgb(28, 30, 33);
+    z-index: 2;
+    font-size: 50px;
+}
+
+.seasonPoint_s1{
+    filter: blur(0px);
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.seasonName_s1{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 60px;
+}
+
+
+.textHolder_s1{
+   width: 100%;
+   text-align: center;
+   margin-top: 60px
+}
+
+.dateText_s1{
+    position: relative;
+    top: 380px;
+    left: 651px;
+    z-index: 2;
+}
+
+.date_s1{
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nameOfTheSeasonHolder_s1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 50px;
+    transform: scale(1.5);
+ }
+
+.prefix_s1{
+    font-family: 'Anton', sans-serif;
+    display: block;
+    position: relative;
+    z-index: 2;
+    top: 47px;
+    left: 155px;
+    color: #FFD700;
+    text-transform: uppercase;
+    font-size: 38px;
+    letter-spacing: 2px;
+    height: 38px
+}
+
+
+
+
+.namePartOne_s1{
+    font-family: 'Anton', sans-serif;
+    font-size: 160px;
+    background: linear-gradient(to right, #fff, #fff 50%, #FFD700 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.namePartOne_s1::first-letter{
+    font-size: 180px;
+}
+
+.namePartOne_s1:hover{
+    background-position: 0 100%;
+}
+
+.namePartsHolder_s1{
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+    padding-top: 95px;
+    text-align: left;
+}
+
+.namePartTwo_s1, .namePartThree_s1{
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.namePartTwo_s1{
+    color: #FFD700
+}
+
+.namePartThree_s1{
+    color: #fff
+}
+
+.sectionPadding_s1{
+    padding-top: 40px;
+}
+
+
+.blockWithName_s1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.kivano_s1{
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to right, rgb(158, 178, 70), rgb(158, 178, 70) 50%, rgb(28, 30, 33) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.kivano_s1:hover{
+    background-position: 0 100%;
+}
+
+.sport_s1{
+    font-size: 70px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-weight: 700;
+    color: rgb(158, 178, 70);
+}
+
+.ballSpace_s1{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    border-bottom: 2px solid rgb(158, 178, 70);
+}
+
+
+.ball_s1{
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    margin-bottom: -6px;
+
+    animation-name: rolling_ball;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rolling_ball {
+    0%{
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        left: 90%;
+        transform: rotate(360deg);
+    }
+}
+
+.newSeasonShortInfo_s1{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.line_s1{
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item_s1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+}
+
+.iconHolder_s1{
+    font-size: 80px
+}
+
+textOfAnIcon_s1{
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.sender_s1{
+    color:rgb(158, 178, 70)
+}
+
+
+
+/* Прочие секции */
+
+.sectionNameHolder_s1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.sectionIcon_s1{
+    font-size: 80px;
+    font-weight: 700;
+    color: rgb(158, 178, 70)
+}
+
+.divider_s1{
+    width:4px;
+    height: 80px;
+    border-radius: 12px;
+    background-color: #FFD700;
+    margin: 0 20px 0 0
+}
+
+.sectionName_s1{
+    font-family: 'Russo One', sans-serif;
+    font-size: 50px;
+}
+
+ .newSportNameHolder_s1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+ .newSportName_s1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-right: 10px;
+    color:rgb(158, 178, 70)
+ }
+
+
+.splitterHolder_s1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px
+}
+
+ .splitter_s1{
+    width: 200px;
+    height: 4px;
+    border-radius: 12px;
+    background-color: #FFD700;
+ }
+
+
+ .textOfThePointHolder_s1{
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+ }
+
+
+ .textOfThePoint_s1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+ }
+
+
+ .autoHeight_s1{
+    height: auto;
+    padding-bottom: 50px;
+ }
+
+ .marginLeft_s1{
+    margin-left: 10px;
+ }
+
+ .photoOfTheFieldHolder_s1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ .photoOfTheField_s1{
+    width: 80%;
+    height: 550px;
+    border: 5px solid rgb(28, 30, 33)
+ }
+
+ .holderTwo_s1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+
+
+
+.place_s1{
+    position: relative;
+    width: 100vw;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    text-align: center;
+ }
+
+container_s1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .searcher_s1{
+    margin-top: 130px;
+ }
+ 
+.js-search_s1{
+    position: relative;
+    padding: 15px 40px 15px 20px;
+    width: 300px;
+    color: #525252;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(28, 30, 33);
+    transition: width 0.4s ease;
+    outline: none;
+ }
+
+ .two_s1{
+    background-color: #21a91f;
+ }
+
+ .three_s1{
+    background-image: linear-gradient(to right, rgb(12, 12, 12), rgb(50, 129, 180));
+ }
+
+
+  i {
+    position: relative;
+    left: -37px;
+    color: rgb(255, 255, 255);
+ }
+
+ .swiper {
+    width: 50%;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: rgb(158, 178, 70) !important
+  }
+
+  .swiper-pagination-progressbar
+  .swiper-pagination-progressbar-fill {
+    background-color: rgb(158, 178, 70) !important
+  }
+  

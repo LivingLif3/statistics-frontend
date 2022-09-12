@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import './RefreshPassword.css';
 import './RefreshPasswordAdoptation.css';
 import { LOGIN_ROUTE, REGISTRATION_ROUTE } from '../../utils/consts';
-import ModalForRefreshPassword from './ModalForRefreshPassword/ModalForRefreshPassword';
+import UsualModal from './ModalForRefreshPassword/UsualModal';
 
 const RefreshPassword = () => {
   let [email, setEmail] = useState('');
@@ -64,14 +64,14 @@ const RefreshPassword = () => {
           </div>
         </div>
       </div>
-      <ModalForRefreshPassword active={active} setActive={setActive}>
+      <UsualModal active={active} setActive={setActive}>
         <p className="modalText">К Вам на почту пришло письмо с подтерждением. Подтвердите его!</p>
         <div className="modalButtonHolder">
           <button className="modalButton" onClick={() => setActive(false)}>
             Хорошо
           </button>
         </div>
-      </ModalForRefreshPassword>
+      </UsualModal>
     </div>
   );
 };

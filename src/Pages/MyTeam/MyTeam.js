@@ -27,6 +27,9 @@ const MyTeam = ({ users, pushPlayer, team, role, pushTrainer }) => {
               pushPlayer={pushPlayer}
               pushTrainer={pushTrainer}
               img={user.img}
+              role={user.role}
+              height={user.height}
+              weight={user.weight}
             />
           ))}
         {!usersFiltered || (usersFiltered.length === 0 && <SearchPagePlug />)}
