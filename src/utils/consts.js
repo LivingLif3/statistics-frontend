@@ -15,6 +15,7 @@ export const RESULTS_ROUTE = '/results';
 export const CUSTOM_RESULTS_ROUTE = '/customResults';
 export const REFRESH_PASSWORD_ROUTE = '/refreshPassword';
 export const SOON_ROUTE = '/soon';
+export const REDUCT_QUIZ = '/editQuiz';
 
 export const TEST_PAINT = '/testPaint';
 export const USERS_ROUTE = '/testUsers';

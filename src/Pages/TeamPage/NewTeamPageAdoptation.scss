@@ -1,10 +1,15 @@
-/* @media only screen and (max-width: 1390px){
+@media only screen and (max-width: 1390px){
+
+    .wrapper_ocfmt{
+        transform: scale(.8);
+    }
+
+
     .playerHolder_mt{
         flex-wrap: nowrap;
-        max-width: 965px;
+        max-width: 1250px;
         overflow-x: scroll;
         overflow-y: unset;
-        
         padding: 5px 40px;
         padding-bottom: 10px;
         height: 429px
@@ -13,7 +18,7 @@
     .card_ocfmt{
         width: 280px;
         min-width: 280px;
-        height: 370px
+        height: 370px;
     }
 
     .curveOne_ocb{
@@ -26,19 +31,21 @@
     }
 
     .photoHolder_po{
-       transform: scale(.8);
-    } 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .curveTwo_ocb{
         transform: scale(.8);
         right: -16px
     }
 
-    .infoPartHolder_ocf{
+    .myTeamInfoPartHolder_ocf{
         top: 226.01px
     }
 
-    .textOfnameHolder_ocb{
+    .myTeamTextOfNameHolder_ocb{
         font-size: 16px;
     }
 
@@ -46,12 +53,12 @@
         margin-bottom: 10px;
     }
 
-    .field_ocf{
+    .myTeamField_ocf{
         transform: scale(.9);
         margin-bottom: 6px;
     }
 
-    .curveThree_ocb{
+    .myTeamCurveThree{
         transform: scale(.8);
         bottom: -45px;
         left: -12px
@@ -60,13 +67,47 @@
     .card_ocfmt{
         margin: 0 10px 10px 10px
     }
+
+    .deckCardHolder{
+        padding: 35px 20px 0 20px;
+    }
+
+    .wrapper_nmt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_nature{
+        width: 80vw;
+    }
+
+    .upperHolder .teamNameHolder span{
+        font-size: 35px;
+    }
+
+    .deckTop .nameOfTheDeck span{
+        font-size: 27px;
+    }
+
+    .deckTop .buttonSwitcher{
+        padding: 0 18px;
+    }
+
+    .playersDeckHolder .playersDeck{
+        height: 48vw;
+    }
+
+    .container_nature{
+        padding-bottom: 30px;
+    }
 }
 
 
 @media only screen and (max-width: 1024px){
 
     .counterDiv_mt{
-        margin-left: 166px
+        margin-left: 166px;
     }
 
     .playerHolder_mt{
@@ -149,6 +190,8 @@
     .card_ocfmt:first-child{
         margin-left: -68px
     }
+
+
 }
 
 @media only screen and (max-width: 480px){
@@ -169,4 +212,4 @@
     }
 
 
-} */
+}

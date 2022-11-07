@@ -28,10 +28,10 @@ const NavBar = ({ role }) => {
         <div
           className="nav_nb"
           onClick={() => {
-            role === 'TRAINER' && navigator(SEND_QUIZ_ROUTE);
+            role === 'TRAINER1' && navigator(SEND_QUIZ_ROUTE);
             role === 'USER' && navigator(NEW_ROUTE);
           }}>
-          {role === 'TRAINER' ? 'Мои опросы' : 'Новые'}
+          {role === 'TRAINER1' ? 'Мои опросы' : 'Новые'}
         </div>
         <div className="nav_nb" onClick={() => navigator(SUPPORT_ROUTE)}>
           Помощь

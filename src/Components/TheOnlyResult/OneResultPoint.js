@@ -1,7 +1,7 @@
 import React from 'react';
 import './OneResultPoint.css';
 
-const OneResultPoint = ({ date, answer }) => {
+const OneResultPoint = React.memo(({ date, answer }) => {
   console.log(date, 'date', answer, 'answer');
   return (
     <div className="result_orp">
@@ -9,6 +9,6 @@ const OneResultPoint = ({ date, answer }) => {
       <span className="answer_orp">{answer}</span>
     </div>
   );
-};
+});
 
 export default OneResultPoint;

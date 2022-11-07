@@ -9,7 +9,7 @@ import UserCard from '../../Components/UserCard/UserCard';
 import { APP_URL } from '../../http';
 // import OriginalNavBar from "./originalNavLink";
 
-const Cabinet = ({ updateData, img, updateAvatar, role }) => {
+const Cabinet = React.memo(({ updateData, img, updateAvatar, role }) => {
   const [date, setDate] = useState('');
   const [height, setHeight] = useState('');
   const [weight, setWeight] = useState('');
@@ -114,7 +114,7 @@ const Cabinet = ({ updateData, img, updateAvatar, role }) => {
       </div>
     </div>
   );
-};
+});
 
 let mapStateToProps = (state) => ({
   age: state.userReducer.age,

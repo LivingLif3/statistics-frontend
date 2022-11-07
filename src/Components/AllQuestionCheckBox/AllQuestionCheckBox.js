@@ -1,7 +1,7 @@
 import React from 'react';
 import './AllQuestionCheckBox.css';
 
-const AllQuestionCheckBox = ({ setAllQuestions, allQuestions }) => {
+const AllQuestionCheckBox = React.memo(({ setAllQuestions, allQuestions }) => {
   return (
     <div className="checkBoxHolder_aqcb">
       <label class="container_aqcb">
@@ -15,6 +15,6 @@ const AllQuestionCheckBox = ({ setAllQuestions, allQuestions }) => {
       </label>
     </div>
   );
-};
+});
 
 export default AllQuestionCheckBox;

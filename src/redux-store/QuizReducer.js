@@ -9,6 +9,7 @@ const SET_QUIZE_QUESTIONS = 'SET_QUIZE_QUESTIONS';
 const SET_QUIZES_RESULTS_IN_PERIOD = 'SET_QUIZES_RESULTS_IN_PERIOD';
 const SET_QUIZ_TEMPLATE_QUESTIONS = 'SET_QUIZ_TEMPLATE_QUESTIONS';
 const SET_CUSTOM_QUIZES_RESULTS_IN_PERIOD = 'SET_CUSTOM_QUIZES_RESULTS_IN_PERIOD';
+const SET_AVAILABLE_OBJECT = 'SET_AVAILABLE_OBJECT';
 
 let initialState = {
   templateQuiz: null,
@@ -20,6 +21,7 @@ let initialState = {
   quizesResultsInPeriods: null,
   quizeTemplateQuestions: null,
   quizesCustomResultsInPeriods: null,
+  availableObject: null,
 };
 
 export default (state = initialState, action) => {
@@ -51,6 +53,9 @@ export default (state = initialState, action) => {
     case SET_CUSTOM_QUIZES_RESULTS_IN_PERIOD:
       state.quizesCustomResultsInPeriods = action.data.data;
       return Object.assign({}, state);
+    case SET_AVAILABLE_OBJECT:
+      state.availableObject = action.data.data;
+      return Object.assign({}, state);
     default:
       return Object.assign({}, state);
   }
@@ -58,6 +63,7 @@ export default (state = initialState, action) => {
 
 const createTemplateQuizAC = (data) => ({ type: CREATE_TEMPLATE_QUIZ, data });
 const setQuizTemplates = (data) => ({ type: SET_QUIZ_TEMPLATES, data });
+const setAvailableObject = (data) => ({ type: SET_AVAILABLE_OBJECT, data });
 const setTeamPlayers = (data) => ({ type: SET_TEAM_PLAYERS, data });
 const setDailyTemplates = (data) => ({ type: SET_DAILY_TEMPLATES, data });
 const setQuizesForMe = (data) => ({ type: SET_QUIZES_FOR_ME, data });
@@ -168,6 +174,7 @@ export const getTemplateQusetions = (template) => async (dispatch) => {
 
 export const deleteQuizTemplate = (template) => async (dispatch) => {
   try {
+    console.log(template);
     let data = await $api.delete(`/quizeTemplate/${template}`);
     dispatch(setQuizTemplates(data));
   } catch (e) {
@@ -179,6 +186,24 @@ export const stopDailyQuiz = (access) => async (dispatch) => {
   try {
     let data = await $api.post('/stopRepeat', { access });
     dispatch(setDailyTemplates(data));
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+export const editQuizTemplate = (id, title, description) => async (dispatch) => {
+  try {
+    let data = await $api.post('/editQuiz', { id, title, description });
+    dispatch(setQuizTemplates(data));
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+export const getAvailableInfo = () => async (dispatch) => {
+  try {
+    let data = await $api.get('/availableInfo');
+    dispatch(setAvailableObject(data));
   } catch (e) {
     console.log(e);
   }

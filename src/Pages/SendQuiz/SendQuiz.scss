@@ -1,0 +1,283 @@
+@import "../../index.scss";
+
+
+.body_nqs{
+  width: 100%;
+  height: auto;
+  padding: $allPagesDefaultPadding;
+  margin-top: 30px;
+}
+
+.mainHolder_nqs{
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstPosition_nqs{
+  width: 600px;
+  height: 600px;
+  //background-color: #00A550;
+}
+
+.mySwiper_2{
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.ddddd{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $colorOfTheSeason !important
+}
+
+.swiper-pagination-progressbar
+.swiper-pagination-progressbar-fill {
+  background-color: $colorOfTheSeason !important
+}
+
+.rightSide_nqs{
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-top: 4px solid $colorOfTheSeason;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-family: $Ubuntu;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: $colorOfTheSeason;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.choicerHolder{
+  width: auto;
+}
+
+.playerHolderSmall{
+  width: auto;
+
+}
+
+.holderOfPlayersBars {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  max-height: 380px;
+  overflow: auto;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-top: 4px solid $colorOfTheSeason;
+  border-radius: 10px 10px 0 0;
+}
+
+.buttonPlace{
+  display: flex;
+  justify-content: space-between;
+  order: 999;
+  margin-top: auto !important;
+  margin-bottom: 15px;
+}
+
+.buttonInTheBottom{
+  position: relative;
+  padding: 10px  20px;
+  display: block;
+  text-transform: uppercase;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 40px;
+  margin: 0 2px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .liquid{
+    top: -120px;
+  }
+
+  span{
+    position: relative;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 8px;
+    z-index: 1;
+    font-family:$Ubuntu;
+
+  }
+
+  .liquid{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    //background-color: #4973ff;
+    background-color:$colorOfTheSeason;
+    box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+    transition: .5s;
+
+    &:after{
+      content: '';
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -75%);
+      transition: .5s;
+      border-radius: 40%;
+      background: rgba(20, 20, 20, .5);
+      animation: animate 10s linear infinite;
+    }
+
+    &:before{
+      content: '';
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -75%);
+      transition: .5s;
+      border-radius: 45%;
+      background: rgba(20, 20, 20, 1);
+      animation: animate 5s linear infinite;
+    }
+
+  }
+
+}
+
+@keyframes animate {
+  0%{
+    transform: translate(-50%, 75%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+
+.countHolder{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  div{
+    display: flex;
+    flex-direction: row;
+    background-color:$colorOfTheSeason;
+    width: 300px;
+    border-radius: 0 0 20px 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+
+    .insideDiv{
+
+      span{
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        padding: 0 2px;
+        font-family:$Ubuntu;
+      }
+    }
+  }
+}
+
+
+.textBelowHolder{
+  width: 100%;
+  margin-top: 30px;
+  font-family: $Ubuntu;
+  text-align: center;
+
+
+
+
+  .spanish{
+    font-weight: 700;
+    color:$colorOfTheSeason;
+    text-transform: uppercase;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

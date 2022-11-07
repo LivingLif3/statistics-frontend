@@ -1,0 +1,102 @@
+
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .box{
+      width: 100vh;
+      height: 60vh;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 1px -2px 8px 17px rgba(34, 60, 80, 0.2);
+  
+      .nameHolder{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        input{
+          width: 100%;
+          text-align: center;
+          border: 0;
+          font-family: 'Lato', sans-serif;
+          font-weight: 700;
+          font-size: 40px;
+        }
+      }
+  
+      .dividerHolder{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+  
+        div{
+          width: 60vh;
+          height: 3px;
+          background-color: rgba(226, 97, 29, 1);
+          border-radius: 20px;
+        }
+      }
+  
+      .textHolder{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 5vh;
+  
+        p{
+          display: block;
+          text-align: center;
+          font-size: 18px;
+          font-family: 'Ubuntu', sans-serif;
+  
+          &:first-child{
+            margin-bottom: 3vh;
+          }
+  
+          span{
+            color: rgba(226, 97, 29, 1);
+            font-weight: 700;
+          }
+        }
+      }
+  
+      .buttonsHolder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0;
+  
+        div{
+          padding: 2vh 10vh;
+          background-color: rgb(28, 30, 33);
+          cursor: pointer;
+  
+          span{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Ubuntu', sans-serif;
+          }
+        }
+      }
+    }
+  }
+  

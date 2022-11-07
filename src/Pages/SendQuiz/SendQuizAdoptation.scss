@@ -1,0 +1,241 @@
+@media only screen and (max-width: 1390px){
+
+    .firstPosition_nqs, .rightSide_nqs{
+        width: 42vw;
+        height: 42vw;
+    }
+
+    .qForm_qf{
+        width: 80%;
+        min-width: 80%;
+    }
+
+
+    .container{
+        font-size: 16px
+    }
+
+    .checkmark{
+        width: 23px;
+        height: 23px;
+    }
+
+    .container .checkmark:after{
+        left: 8px;
+        top: 5px;
+    }
+
+    .result_stb{
+        width: 80%;
+        height: 67px;
+    }
+
+    .buttonInTheBottom{
+        width: 13vw;
+        padding: 10px 4px;
+
+        span{
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+    }
+
+    .buttonPlace{
+        margin-top: 26px;
+        padding-bottom: 10px;
+    }
+
+    .textBelowHolder{
+
+        span{
+            font-size: 16px;
+        }
+    }
+
+    .surname_stb, .name_stb{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+
+    .mainHolder_nqs{
+        justify-content: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstPosition_nqs{
+        margin-bottom: 30px;
+    }
+
+    .firstPosition_nqs, .rightSide_nqs{
+        width: 100%;
+    }
+
+    .qForm_qf{
+        height: 95%;
+    }
+
+    .buttonInTheBottom{
+        width: 20vw;
+    }
+
+    .rightSide_nqs{
+        height: 500px;
+    }
+
+    .result_stb{
+        max-width: 495px;
+    }
+
+    .textBelowHolder span{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .body_nqs{
+        margin-top: 0;
+    }
+
+    .qFormHeaderText_qf{
+        font-size: 14px;
+    }
+
+    .qFormBodyText_qf{
+        font-size: 12px;
+    }
+
+    .countHolder div{
+        width: 193px;
+    }
+
+    .countHolder div .insideDiv span{
+        font-size: 13px;
+    }
+
+    .container{
+        font-size: 12px;
+        padding-left: 26px;
+    }
+
+    .checkmark{
+        width: 18px;
+        height: 18px;
+    }
+
+    .container .checkmark:after{
+        left: 5px;
+        top: 2px;
+    }
+
+    .result_stb{
+        height: 50px
+    }
+
+    .avatar_stb{
+        width: 40px;
+        height: 40px;
+    }
+
+    .surname_stb, .name_stb{
+        font-size: .8rem;
+    }
+
+    .lineTwo_stb{
+        margin-top: -10px;
+    }
+
+    .age_stb{
+        font-size: .6rem;
+    }
+
+    .buttonInTheBottom{
+        width: 23vw;
+        padding: 5px 4px;
+    }
+
+    .buttonInTheBottom span{
+        font-size: 9px;
+    }
+
+    .textBelowHolder{
+        margin-top: 10px;
+        line-height: 7px;
+
+        span{
+            font-size: 7px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .body_nqs{
+        padding: 0 29px;
+    }
+
+    .firstPosition_nqs{
+        height: 50vw;
+    }
+
+    .countHolder div{
+        width: 150px
+    }
+
+    .countHolder div .insideDiv span{
+        font-size: 10px;
+    }
+
+    .container{
+        font-size: 10px;
+    }
+
+    .checkmark{
+        width: 16px;
+        height: 16px;
+    }
+
+    .container .checkmark:after{
+        width: 4px;
+        height: 9px;
+        top: 1px;
+    }
+
+    .holderOfPlayersBars{
+        padding: 10px;
+    }
+
+    .result_stb{
+        height: 40px;
+    }
+
+    .surname_stb, .name_stb{
+        font-size: .6rem;
+    }
+
+    .age_stb{
+        font-size: .5rem;
+    }
+
+    .lineTwo_stb{
+        margin-top: -13px;
+    }
+
+    .avatar_stb{
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .buttonInTheBottom{
+        padding: 0;
+        padding-bottom: 6px;
+        text-align: center;
+    }
+
+    .buttonInTheBottom span{
+        font-size: 6px;
+    }
+
+}

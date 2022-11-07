@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600&family=Edu+VIC+WA+NT+Beginner:wght@400;600&family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lobster&family=Montserrat+Alternates:ital,wght@0,400;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+
+//Переменные цвета
+$colorOfTheSeason: rgba(226, 97, 29, 1);
+$allPagesDefaultPadding: 0 60px;
+$newColor: rgb(102, 102, 102);
+$black: rgb(28, 30, 33);
+$newColor2: rgb(77, 77, 77);
+$beautifulGradient: linear-gradient(45deg, rgb(73, 73, 73), rgb(0, 0, 0), rgb(67, 67, 67));
+$beautifulGradient2: linear-gradient(to top right, $newColor2, $black);
+
+//Переменные шрифтов
+$IbmPLexMono: 'IBM Plex Mono', monospace;
+$Roboto:'Roboto', sans-serif;
+$Ubuntu: 'Ubuntu', sans-serif;
+$Lalezar: 'Lalezar', cursive;
+$Lato: 'Lato', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+$Judson: 'Judson', sans-serif;
+$AnekMalayalam: 'Anek Malayalam', sans-serif;
+$Mulish: 'Mulish', sans-serif;
+$OpenSans: 'Open Sans', sans-serif;
+$ABeeZee: 'ABeeZee', sans-serif;
+$OpenSuns: 'Open Sans', sans-serif;
+$Caveat: 'Caveat', cursive;
+$Lobster: 'Lobster', cursive;
+$MontserratAlternates: 'Montserrat Alternates', sans-serif;
+$Play: 'Play', sans-serif;
+$Merriweather: 'Merriweather', serif;
+$AlumniSansCollegiateOne: 'Alumni Sans Collegiate One', sans-serif;
+$RubikDirt: 'Rubik Dirt', cursive;
+$Anton: 'Anton', sans-serif;
+$NunitoSans: 'Nunito Sans', sans-serif;
+$RussoOne: 'Russo One', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+$SourceSansPro: 'Source Sans Pro', sans-serif;
+$RobotoSlab: 'Roboto Slab', serif;
+
+//Шаблоны
+%dividerDefault_S0{
+	width: 120px;
+	height: 3px;
+	background-color:$colorOfTheSeason;
+	border-radius: 20px;
+}
+
+//Переменные карт
+$widthOfOriginalCardForMyTeam: 350px;
+$heightOfOriginalCardForMyTeam: 500px;
+
+
+
+
+*{
+	font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+}
+
+a{
+	text-decoration: none;
+}
+
+input{
+	outline: none;
+}
+

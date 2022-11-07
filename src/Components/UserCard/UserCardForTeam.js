@@ -11,47 +11,49 @@ import PhotoPart from './CardComponents/PhotoPart';
 import OriginalFrontInfoHolder from './CardComponents/FrontInfoHolder';
 import { APP_URL } from '../../http';
 
-const UserCardForTeam = ({
-  id,
-  name,
-  surname,
-  role,
-  age,
-  height,
-  weight,
-  img,
-  deletePlayer,
-  teamId,
-  myRole,
-  onDelete,
-  setDeletedPlayerId,
-}) => {
-  let onDeletePlayer = () => {
-    onDelete(id);
-  };
-  let avatar = img ? `${APP_URL}/photos/${img}` : null;
-  return (
-    <div className="card_ocfmt">
-      <div className="front_ocfmt">
-        <img className="curveOne_ocb" src={CurveOne} draggable={false} />
-        <div className={myRole === 'TRAINER' && `deliteHolder_ocfmt`} onClick={onDeletePlayer}>
-          {deletePlayer && <DeleteOutlined />}
+const UserCardForTeam = React.memo(
+  ({
+    id,
+    name,
+    surname,
+    role,
+    age,
+    height,
+    weight,
+    img,
+    deletePlayer,
+    teamId,
+    myRole,
+    onDelete,
+    setDeletedPlayerId,
+  }) => {
+    console.log('load');
+    let onDeletePlayer = () => {
+      onDelete(id);
+    };
+    let avatar = img ? `${APP_URL}/photos/${img}` : null;
+    return (
+      <div className="card_ocfmt">
+        <div className="front_ocfmt">
+          <img className="curveOne_ocb" src={CurveOne} draggable={false} />
+          <div className={myRole === 'TRAINER1' && `deliteHolder_ocfmt`} onClick={onDeletePlayer}>
+            {deletePlayer && <DeleteOutlined />}
+          </div>
+          <PhotoPart avatar={avatar} />
+          <img className="curveTwo_ocb" src={CurveTwo} draggable={false} />
+          <OriginalFrontInfoHolder
+            id={id}
+            name={name}
+            surname={surname}
+            role={role}
+            age={age}
+            height={height}
+            weight={weight}
+          />
+          <img className="curveThree_ocb" src={CurveThree} draggable={false} />
         </div>
-        <PhotoPart avatar={avatar} />
-        <img className="curveTwo_ocb" src={CurveTwo} draggable={false} />
-        <OriginalFrontInfoHolder
-          id={id}
-          name={name}
-          surname={surname}
-          role={role}
-          age={age}
-          height={height}
-          weight={weight}
-        />
-        <img className="curveThree_ocb" src={CurveThree} draggable={false} />
       </div>
-    </div>
-  );
-};
-
+    );
+  },
+);
 export default UserCardForTeam;

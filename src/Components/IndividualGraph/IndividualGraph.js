@@ -11,13 +11,10 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-// import ChooseToCreateAGraph from "./plugs/chooseTheGraphPlug";
-// import FailedToCreateAGraph from "./plugs/graphFailure";
-// import ImpossibleToCreateAGraph from "./plugs/noGraphPlug";
 
 const options = {};
 
-const IndividualGraph = ({ graphs, teamPlayers, getRandomColor }) => {
+const IndividualGraph = React.memo(({ graphs, teamPlayers, getRandomColor }) => {
   const [labels, setLabels] = useState(null);
   ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
   let dataCreator = (user, questionAnswers) => {
@@ -50,11 +47,11 @@ const IndividualGraph = ({ graphs, teamPlayers, getRandomColor }) => {
     console.log(graphs);
   }, [graphs]);
   const data = {
-    labels: labels ? labels.questionAnswers.map((answer) => answer.date) : [],
+    labels: labels ? labels.questionAnswers.map((answer) => answer.date) : [0],
     datasets:
       graphs.length > 0
         ? graphs.map((graph) => dataCreator(graph.user, graph.questionAnswers))
-        : [],
+        : [0],
   };
   // const data = {
   //   labels: allQuestions
@@ -77,6 +74,6 @@ const IndividualGraph = ({ graphs, teamPlayers, getRandomColor }) => {
   //   ],
   // };
   return <Line data={data} height={1000} width={2000} options={options} />;
-};
+});
 
 export default IndividualGraph;

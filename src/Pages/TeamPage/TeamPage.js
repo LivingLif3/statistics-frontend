@@ -71,9 +71,6 @@ const TeamPage = ({
     setModalActive(false);
     setDeleteModal(false);
   };
-  useEffect(() => {
-    console.log(trainers);
-  }, [trainers]);
   return (
     <div className="page_mt">
       <NavBar role={role} />

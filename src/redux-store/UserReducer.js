@@ -1,6 +1,8 @@
 import axios from 'axios';
 import $api, { API_URL } from '../http';
 
+const SET_REGISTRATION_ERROR = 'SET_REGISTRATION_ERROR';
+const SET_LOGIN_ERROR = 'SET_LOGIN_ERROR';
 const GET_USER_DATA = 'GET_USER_DATA';
 const SET_CONFIRM_HASH = 'SET_CONFIRM_HASH';
 const CLEAR_DATA = 'CLEAR_DATA';
@@ -9,6 +11,8 @@ const SET_REGISTRATION_SUCCESS = 'SET_REGISTRATION_SUCCESS';
 const SET_AVATAR = 'SET_AVATAR';
 
 const initialState = {
+  regError: false,
+  loginError: false,
   isAuth: false,
   username: '',
   surname: '',
@@ -28,6 +32,12 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case SET_REGISTRATION_ERROR:
+      state.regError = true;
+      return { ...state };
+    case SET_LOGIN_ERROR:
+      state.loginError = true;
+      return { ...state };
     case GET_USER_DATA:
       state.isAuth = true;
       state.username = action.data.name;
@@ -41,6 +51,8 @@ export default (state = initialState, action) => {
       state.age = action.data.age;
       state.weight = action.data.weight;
       state.height = action.data.height;
+      state.loginError = false;
+      state.regError = false;
       return { ...state };
     case SET_REGISTRATION_SUCCESS:
       state.registrationSuccess = action.state;
@@ -74,6 +86,8 @@ export default (state = initialState, action) => {
   }
 };
 
+const setLoginError = () => ({ type: SET_LOGIN_ERROR });
+const setRegError = () => ({ type: SET_REGISTRATION_ERROR });
 const getUserDataAC = (data) => ({ type: GET_USER_DATA, data });
 const setConfirmHashAC = (data) => ({ type: SET_CONFIRM_HASH, data });
 const clearDataAC = () => ({ type: CLEAR_DATA });
@@ -92,6 +106,9 @@ export const setRegistrationSuccess = (state) => (dispatch) => {
 export const getUserData = (name, surname, lastname, email, password) => async (dispatch) => {
   try {
     const data = await $api.post('/registration', { name, surname, lastname, email, password });
+    if (!data) {
+      return dispatch(setRegError());
+    }
     window.localStorage.setItem('token', data.data.accessToken);
     dispatch(getUserDataAC(data.data.user));
     dispatch(setRegistrationSuccessAC(true));
@@ -103,6 +120,9 @@ export const getUserData = (name, surname, lastname, email, password) => async (
 export const setUserData = (email, password) => async (dispatch) => {
   try {
     const data = await $api.post('/login', { email, password });
+    if (!data) {
+      return dispatch(setLoginError());
+    }
     window.localStorage.setItem('token', data.data.accessToken);
     dispatch(getUserDataAC(data.data.user));
   } catch (e) {

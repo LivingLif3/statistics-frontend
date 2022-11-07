@@ -14,7 +14,6 @@ const Colletion = ({ quizTemplates, getDailyQuizes, dailyQuizes, deleteQuizTempl
   useEffect(() => {
     getDailyQuizes();
   }, []);
-  console.log(dailyQuizes);
   return (
     <div className="page_cp">
       <StateFormNavBar />

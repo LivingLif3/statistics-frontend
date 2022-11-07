@@ -2,7 +2,7 @@ import React from 'react';
 import OneResultPoint from '../TheOnlyResult/OneResultPoint';
 import './AnswersContainerOfOneQuestion.css';
 
-const AnswersContainerOfOneQuestion = ({ questionResults }) => {
+const AnswersContainerOfOneQuestion = React.memo(({ questionResults }) => {
   console.log(questionResults, 'questionResults');
   return (
     <div className="resultDiv_acoq">
@@ -12,6 +12,6 @@ const AnswersContainerOfOneQuestion = ({ questionResults }) => {
         ))}
     </div>
   );
-};
+});
 
 export default AnswersContainerOfOneQuestion;

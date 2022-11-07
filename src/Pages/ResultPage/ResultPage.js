@@ -33,7 +33,7 @@ const ResultPage = ({
       getTemplateQusetions(template);
     }
   };
-  useEffect(() => {
+  React.useMemo(() => {
     let resBuffer = [];
     if (selectedQuestion && quizesResultsInPeriods) {
       for (let i = 0; i < quizesResultsInPeriods.length; i++) {
@@ -56,7 +56,7 @@ const ResultPage = ({
     }
     setSelectedQuestionData(resBuffer);
   }, [selectedQuestion]);
-  useEffect(() => {
+  React.useMemo(() => {
     let resBuffer = [];
     if (quizesResultsInPeriods) {
       for (let i = 0; i < quizesResultsInPeriods.length; i++) {

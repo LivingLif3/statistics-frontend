@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './TemplateForm.css';
 
-const TemplateForm = ({ title, id, templatesState, setTemplatesState, description }) => {
+const TemplateForm = React.memo(({ title, id, templatesState, setTemplatesState, description }) => {
   const [click, setClick] = useState(false);
   const [active, setActive] = useState(false);
   const onClick = () => {
@@ -32,6 +32,6 @@ const TemplateForm = ({ title, id, templatesState, setTemplatesState, descriptio
       </div>
     </div>
   );
-};
+});
 
 export default TemplateForm;

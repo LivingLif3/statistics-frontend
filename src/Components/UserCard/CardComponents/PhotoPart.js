@@ -5,7 +5,7 @@ import PhotoPlug from '../../PhotoPlug/PhotoPlug';
 
 // import meTest1 from '../imagesForCard/meTest1.jpeg';
 
-const PhotoPart = ({ avatar }) => {
+const PhotoPart = React.memo(({ avatar }) => {
   console.log(avatar);
   return (
     <div className="photoHolder_po">
@@ -20,6 +20,6 @@ const PhotoPart = ({ avatar }) => {
       </div>
     </div>
   );
-};
+});
 
 export default PhotoPart;

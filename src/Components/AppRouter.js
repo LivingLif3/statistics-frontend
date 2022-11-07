@@ -9,7 +9,7 @@ const AppRouter = ({ isAuth, role }) => {
   return (
     <Routes>
       {isAuth &&
-        role === 'TRAINER' &&
+        role === 'TRAINER1' &&
         trainerRoutes.map(({ Component, path }) => (
           <Route key={path} element={Component} path={path} />
         ))}

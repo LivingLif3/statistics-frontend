@@ -1,0 +1,72 @@
+@import '../../index.scss';
+
+$avatarWidth: 70px;
+$plugWidth: 400px;
+$plugHeight: 70px;
+
+
+.result_stb{
+  display: flex;
+  align-items: center;
+  width: $plugWidth;
+  height: $plugHeight;
+  background: $beautifulGradient2;
+  margin-bottom: 10px;
+  padding: 10px;
+
+
+  border-radius: 20px;
+
+  color: rgb(250, 250, 250);
+
+}
+
+.imgHolder_stb{
+  width: $avatarWidth + 10px;
+}
+
+.avatar_stb{
+  display: flex;
+  align-items: center;
+  width: $avatarWidth;
+  height: $avatarWidth;
+  font-size: 60px;
+  border-radius: 50%;
+}
+
+.activeSmallBar{
+    background: #e2611d !important;
+}
+
+
+.info_ss{
+  display: flex;
+  width: $plugWidth - $avatarWidth;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+}
+
+
+.surname_stb, .name_stb{
+  font-size: 18px;
+  padding: 3px;
+
+  font-weight: 700;
+}
+
+.lineOne_stb{
+  margin-top: 5px;
+  display: block;
+}
+
+.lable_stb{
+  margin-right: 3px;
+}
+
+.age_stb{
+  font-weight: 700;
+  font-size: 16px;
+}

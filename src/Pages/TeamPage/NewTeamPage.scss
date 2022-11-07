@@ -1,0 +1,248 @@
+@import "../../index.scss";
+
+.page_nmtp{
+  width: 100%;
+}
+
+.body_nm{
+  width: 100%;
+  padding: $allPagesDefaultPadding;
+}
+
+.upperHolder{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+
+
+  .teamNameHolder{
+    text-align: center;
+
+
+    span{
+      font-family: $Lato;
+      font-weight: 700;
+      font-size: 40px;
+    }
+  }
+}
+
+.dividerHolder_nmtp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.divider_nmtp{
+  @extend %dividerDefault_S0;
+  width: 300px
+}
+
+.playersDeckHolder{
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  background: #fff;
+
+  .playersDeck{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    perspective: 3000px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0;
+
+
+    .playersDeckFront, .playersDeckBack{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      transition: 1s ;
+      backface-visibility: hidden;
+      background: $beautifulGradient2;
+      border: 3px solid $colorOfTheSeason;
+      border-radius: 20px;
+    }
+
+    .playersDeckBack{
+      transform: rotateX(180deg);
+    }
+
+    // &:hover .playersDeckFront{
+    //   transform: rotateX(180deg);
+    // }
+
+    .rotateDeckFront{
+      transform: rotateX(180deg);
+    }
+    .rotateDeckBack{
+      transform: rotateX(360deg);
+    }
+    // &:hover .playersDeckBack{
+    //   transform: rotateX(360deg);
+    // }
+  }
+}
+
+.deckTop{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  color: #fff;
+
+  .peopleCountHolder{
+
+    span{
+      font-size: 25px;
+    }
+  }
+
+  .nameOfTheDeck{
+    background:$colorOfTheSeason;
+    text-align: center;
+    width: 400px;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 5px;
+
+    span{
+      text-transform: uppercase;
+      font-size: 30px;
+      font-family:$Oswald;
+      font-weight: 600;
+    }
+  }
+
+  .buttonSwitcher{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right:0;
+    text-align: center;
+    height: 100%;
+    background:$colorOfTheSeason;
+    border-bottom-left-radius: 20px;
+    padding: 0 20px;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity .3s linear;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &:hover .buttonSwitcher{
+    opacity: 1;
+  }
+}
+
+//.playersDeckFront:hover .buttonSwitcher{
+//  opacity: 1;
+//}
+
+
+.deckCardHolder{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 35px 20px 0 0;
+  align-items: center;
+
+
+}
+
+
+.container_nature{
+  margin: 100px;
+  display: inline-flex;
+  max-width: 1200px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-top: 60px;
+
+  &::-webkit-scrollbar{
+    width: 0
+  }
+
+  .card_test{
+    display: flex;
+    min-height:200px;
+    min-width:$widthOfOriginalCardForMyTeam;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+    transition: .4s ease-out;
+    position: relative;
+    left:0;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+
+    // &:before{
+    //   content: '';
+    //   width: 80%;
+    //   height: 50%;
+    //   display: block;
+    //   background: rgba(255, 255, 255, .2);
+    //   backdrop-filter: blur(1px);
+    //   -webkit-backdrop-filter: blur(5px);
+    //   position: absolute;
+    //   z-index: -1;
+    //   border-radius: 10px;
+    // }
+
+    // &:after{
+    //   content: '';
+    //   position: absolute;
+    //   width: 90%;
+    //   height: 90%;
+    //   border-radius: 10px;
+    //   z-index: -1;
+    // }
+
+    &:not(:first-child){
+      margin-left: -160px;
+    }
+
+    &:hover{
+      transform: translateY(-50px);
+      z-index: 3;
+      transition: .3s ease-out;
+    }
+
+    &:hover ~ &{
+      position: relative;
+      left: 70px;
+      z-index: 3;
+      transition: .4s ease-out;
+    }
+  }
+}
+
+//&:hover .playersDeckFront{
+//  transform: rotateX(180deg);
+//}
+
+//&:hover .playersDeckBack{
+//  transform: rotateX(360deg);
+//}
+
+

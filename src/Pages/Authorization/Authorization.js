@@ -12,7 +12,7 @@ import {
 import './Authorization.css';
 import './AuthorizationAdoptation.css';
 
-const Authorization = ({ setUserData, isAuth, getUsers, users }) => {
+const Authorization = ({ setUserData, isAuth, getUsers, users, loginError }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   let navigator = useNavigate();
@@ -53,6 +53,7 @@ const Authorization = ({ setUserData, isAuth, getUsers, users }) => {
             <button type="submit" onClick={onLogin}>
               &#xf0da;
             </button>
+            {loginError && <p style={{ color: '#e71333' }}>Введена неверно почта или пароль!</p>}
             <p>
               Забыли пароль? <span onClick={() => navigator(REFRESH_PASSWORD_ROUTE)}>Нажмите</span>
             </p>
@@ -69,6 +70,7 @@ const Authorization = ({ setUserData, isAuth, getUsers, users }) => {
 let mapStateToProps = (state) => ({
   isAuth: state.userReducer.isAuth,
   users: state.userReducer.users,
+  loginError: state.userReducer.loginError,
 });
 
 export default connect(mapStateToProps, { setUserData, getUsers })(Authorization);

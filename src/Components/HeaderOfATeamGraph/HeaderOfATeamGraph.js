@@ -1,7 +1,7 @@
 import React from 'react';
 import './TeamGraph.css';
 
-const HeaderOfATeamGraph = ({ dataToTeamGraph }) => {
+const HeaderOfATeamGraph = React.memo(({ dataToTeamGraph }) => {
   console.log(dataToTeamGraph, 'dataToTeamGraph');
   let mark = 0;
   if (dataToTeamGraph) {
@@ -15,10 +15,10 @@ const HeaderOfATeamGraph = ({ dataToTeamGraph }) => {
       <span className="headerr_rp">График средних</span>
       <div className="spanHolder_rp">
         <span className="tagName_rp">За срез:</span>
-        <span className="number_rp">{mark.toFixed(3)}</span>
+        <span className="number_rp">{mark ? mark.toFixed(3) : '0.000'}</span>
       </div>
     </div>
   );
-};
+});
 
 export default HeaderOfATeamGraph;

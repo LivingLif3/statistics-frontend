@@ -13,6 +13,7 @@ const Registration = ({
   isAuth,
   registrationSuccess,
   setRegistrationSuccess,
+  regError,
 }) => {
   const [name, setName] = useState('');
   const [surname, setSurname] = useState('');
@@ -90,7 +91,9 @@ const Registration = ({
             <button type="submit" onClick={onConfirm}>
               &#xf0da;
             </button>
-
+            {regError && (
+              <p style={{ color: '#e71333' }}>Данный почтовый адрес уже используется!</p>
+            )}
             <p>
               Есть аккаунт? <span onClick={() => navigator(LOGIN_ROUTE)}>Нажмите</span>
             </p>
@@ -104,6 +107,7 @@ const Registration = ({
 let mapStateToProps = (state) => ({
   isAuth: state.userReducer.isAuth,
   registrationSuccess: state.userReducer.registrationSuccess,
+  regError: state.userReducer.regError,
 });
 
 export default connect(mapStateToProps, { getUserData, setConfirmHash, setRegistrationSuccess })(

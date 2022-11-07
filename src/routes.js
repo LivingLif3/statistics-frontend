@@ -3,19 +3,23 @@ import UserFinder from './Components/UserFinder';
 import Authorization from './Pages/Authorization/Authorization';
 import Cabinet from './Pages/Cabinet/Cabinet';
 import Colletion from './Pages/Collection/Collection';
+import NewCollection from './Pages/Collection/NewCollection';
 import CreateQuiz from './Pages/CreateQuiz/CreateQuiz';
 import CreateQuizClone from './Pages/CreateQuiz/CreateQuizClone';
 import CustomResultPage from './Pages/CustomResultPage/CustomResultPage';
 import Main from './Pages/Main/Main';
 import MyTeam from './Pages/MyTeam/MyTeam';
 import New from './Pages/New/New';
+import ReductQuiz from './Pages/ReductQuiz/ReductQuiz';
 import RefreshPassword from './Pages/RefreshPassword/RefreshPassword';
 import Registration from './Pages/Registration/Registration';
 import ResultPage from './Pages/ResultPage/ResultPage';
+import NewSendQuiz from './Pages/SendQuiz/NewSendQuiz';
 import SendQuiz from './Pages/SendQuiz/SendQuiz';
 import Shop from './Pages/Shop/Shop';
 import Soon from './Pages/Soon/Soon';
 import Support from './Pages/Support/Support';
+import NewTeamPage from './Pages/TeamPage/NewTeamPage';
 import TeamPage from './Pages/TeamPage/TeamPage';
 import {
   CABINET_ROUTE,
@@ -26,6 +30,7 @@ import {
   MAIN_ROUTE,
   MY_TEAM_ROUTE,
   NEW_ROUTE,
+  REDUCT_QUIZ,
   REFRESH_PASSWORD_ROUTE,
   REGISTRATION_ROUTE,
   RESULTS_ROUTE,
@@ -91,11 +96,11 @@ export const trainerRoutes = [
   },
   {
     path: SEND_QUIZ_ROUTE,
-    Component: <SendQuiz />,
+    Component: <NewSendQuiz />,
   },
   {
     path: TEAM_ROUTE,
-    Component: <TeamPage />,
+    Component: <NewTeamPage />,
   },
   {
     path: CABINET_ROUTE,
@@ -103,8 +108,12 @@ export const trainerRoutes = [
   },
   {
     path: COLLECTION_ROUTE,
-    Component: <Colletion />,
+    Component: <NewCollection />,
   },
+  // {
+  //   path: COLLECTION_ROUTE,
+  //   Component: <Colletion />,
+  // },
   {
     path: NEW_ROUTE,
     Component: <New />,
@@ -112,6 +121,10 @@ export const trainerRoutes = [
   {
     path: RESULTS_ROUTE,
     Component: <ResultPage />,
+  },
+  {
+    path: REDUCT_QUIZ,
+    Component: <ReductQuiz />,
   },
 ];
 
