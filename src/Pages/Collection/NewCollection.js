@@ -32,7 +32,6 @@ import {
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 import SmallQuestionForm from '../../Components/SmallQuestionForm/SmallQuestionForm';
-import { useRef } from 'react';
 import { useState } from 'react';
 import $api, { API_URL } from '../../http';
 
@@ -91,20 +90,23 @@ const Colletion = ({
   //Check change custom status
   useEffect(() => {
     //check custom
-    dailyQuizes && dailyQuizes[secondSlideIndex].template.custom
+    console.log('dailyQuizes', dailyQuizes);
+    dailyQuizes && dailyQuizes.length && dailyQuizes[secondSlideIndex].template.custom
       ? setSecondCustom(true)
       : setSecondCustom(false);
-    quizTemplates && quizTemplates[slideIndex].custom
+    quizTemplates && quizTemplates.length && quizTemplates[slideIndex].custom
       ? setFirstCustom(true)
       : setFirstCustom(false);
     //check ready results
   }, [secondSlideIndex, slideIndex]);
   useEffect(() => {
-    $api
-      .post(`${API_URL}/checkSended`, { template: quizTemplates[slideIndex]._id })
-      .then(({ data }) => {
-        setCheckSended(data);
-      });
+    if (quizTemplates.length > 0) {
+      $api
+        .post(`${API_URL}/checkSended`, { template: quizTemplates[slideIndex]._id })
+        .then(({ data }) => {
+          setCheckSended(data);
+        });
+    }
   }, [slideIndex]);
   useEffect(() => {
     console.log(checkSended, 'checkSended');
@@ -304,7 +306,7 @@ const Colletion = ({
                   </span> */}
                       <span data-tooltip="Количество вопросов">
                         {quizTemplates &&
-                          quizTemplates[secondSlideIndex] &&
+                          quizTemplates[slideIndex] &&
                           quizTemplates[slideIndex].questions.length}
                       </span>
                     </>
