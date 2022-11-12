@@ -43,6 +43,15 @@ export const getTeam = () => async (dispatch) => {
   }
 };
 
+export const getTeamForUser = () => async (dispatch) => {
+  try {
+    const data = await $api.get('/userTeam');
+    dispatch(createTeamAC(data));
+  } catch (e) {
+    console.log(e);
+  }
+};
+
 export const pushPlayer = (userId, teamId) => async (dispatch) => {
   try {
     const data = await $api.post('/pushPlayer', { userId, teamId });

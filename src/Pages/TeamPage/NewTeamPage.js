@@ -7,7 +7,13 @@ import './NewTeamPage.scss';
 import './NewTeamPageAdoptation.scss';
 import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { createTeam, deletePlayer, getTeam, getTeamTrainers } from '../../redux-store/TeamReducer';
+import {
+  createTeam,
+  deletePlayer,
+  getTeam,
+  getTeamForUser,
+  getTeamTrainers,
+} from '../../redux-store/TeamReducer';
 import { MAIN_ROUTE } from '../../utils/consts';
 import { getTeamPlayers } from '../../redux-store/QuizReducer';
 import NoTeamCreated from '../../Components/NoTeamCreated/NoTeamCreated';
@@ -24,6 +30,7 @@ const NewTeamPage = ({
   deletePlayer,
   getTeamPlayers,
   getTeamTrainers,
+  getTeamForUser,
   teamId,
 }) => {
   let navigator = useNavigate();
@@ -32,13 +39,18 @@ const NewTeamPage = ({
   let [rotateDeck, setRotateDeck] = useState(false);
   let [deletedPlayerId, setDeletedPlayerId] = useState(null);
   useEffect(() => {
-    getTeam();
+    if (role === 'USER') {
+      getTeamForUser();
+    } else {
+      getTeam();
+    }
+
     if (!userTeam && role === 'USER') {
       navigator(MAIN_ROUTE);
     }
   }, []);
   useEffect(() => {
-    console.log('here players');
+    console.log(team, 'team');
     if (team) {
       getTeamTrainers(team._id);
       getTeamPlayers(team._id);
@@ -203,4 +215,5 @@ export default connect(mapStateToProps, {
   getTeam,
   getTeamPlayers,
   getTeamTrainers,
+  getTeamForUser,
 })(NewTeamPage);
