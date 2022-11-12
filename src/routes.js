@@ -131,7 +131,7 @@ export const trainerRoutes = [
 export const userRoutes = [
   {
     path: TEAM_ROUTE,
-    Component: <TeamPage />,
+    Component: <NewTeamPage />,
   },
   {
     path: CABINET_ROUTE,
