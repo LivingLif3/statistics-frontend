@@ -34,6 +34,10 @@
     transition: opacity .7 linear;
 }
 
+.delete_none {
+    display: none;
+}
+
 .card_ocfmt:hover .deliteHolder_ocfmt{
     opacity: 1;
     transition: 0.5s;

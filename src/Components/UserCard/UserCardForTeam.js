@@ -36,7 +36,9 @@ const UserCardForTeam = React.memo(
       <div className="card_ocfmt">
         <div className="front_ocfmt">
           <img className="curveOne_ocb" src={CurveOne} draggable={false} />
-          <div className={myRole === 'TRAINER1' && `deliteHolder_ocfmt`} onClick={onDeletePlayer}>
+          <div
+            className={myRole === 'TRAINER1' ? `deliteHolder_ocfmt` : 'delete_none'}
+            onClick={onDeletePlayer}>
             {deletePlayer && <DeleteOutlined />}
           </div>
           <PhotoPart avatar={avatar} />
