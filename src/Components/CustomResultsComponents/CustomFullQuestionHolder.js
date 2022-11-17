@@ -11,7 +11,7 @@ const CustomContainerWithTheWholeQuestion = ({
   let [questionResults, setQuestionResults] = useState([]);
   useEffect(() => {
     let resultsOfOneQuestion = [];
-    if (id && question) {
+    if (id && question && quizesCustomResultsInPeriods) {
       for (let results of quizesCustomResultsInPeriods) {
         for (let result of results) {
           if (result.user.toString() === id.toString()) {
