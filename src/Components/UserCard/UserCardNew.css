@@ -15,7 +15,7 @@
     perspective: 1000px;
 }
 
-.card_Cab:hover .front_Cab{
+.card_Cab:hover .front_ocfc{
     transition-delay: 1s;
     transform: rotateY(180deg);
 }
@@ -25,14 +25,14 @@
     transform: rotateY(360deg);
 }
 
-.front_Cab, .back_Cab{
+.front_ocfc, .back_Cab{
     position: absolute;
     top: 0;
     left: 0;
     border: 2px solid rgb(28, 30, 33);
 }
 
-.front_Cab, .back_Cab{
+.front_ocfc, .back_Cab{
 
     width: 100%;
     height: 100%;
@@ -41,7 +41,7 @@
     backface-visibility: hidden;
 }
 
-.front_Cab{
+.front_ocfc{
     /* background: #1CD3A2; */
     background: #111;
 }
@@ -54,20 +54,19 @@
 }
 
 /* Лицевая сторона */
-.curveOne_ocf{
+.curveOne{
     position: absolute;
     overflow: hidden;
     border-radius: 16px 0 0 0 ;
 }
 
-.curveTwo_ocf{
+.curveTwo{
     position: absolute;
     right: 0;
     top: 25%;
-    overflow: hidden;
 }
 
-.curveThree_ocf{
+.curveThree{
     position: absolute;
     bottom: 0;
     border-radius: 0 0 0 16px;
@@ -88,7 +87,6 @@
 }
 
 .photo_ocf{
-    
     padding: 0 auto;
     width: 100%;
     height: 100%;
@@ -147,7 +145,7 @@
     /* background-color: aqua; */
 }
 
-.infoPartHolder_ocf{
+.infoPartHolder{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -155,7 +153,7 @@
     width: 100%;
     height: 50%;
     left: 0px;
-    top: 250.01px !important;
+    top: 250.01px;
     border-radius: 40px 40px 20px 20px;
 
     background: #303030;
@@ -194,12 +192,12 @@
     width: 238px;
     height: 0px;
     margin-top: 5px;
-    margin-bottom: 23px;
+    margin-bottom: 15px;
 
     border: 1px solid #E2611D;
 }
 
-.field_ocf{
+.field{
     display: flex;
     align-items: center;
     width: 170px;
@@ -214,8 +212,12 @@
     border-radius: 29px;
 }
 
+.field:last-child{
+    z-index: 3;
+}
 
-.textOfFields_ocf, .unitsOfMeasure_ocf, .weightResult_ocf, .hieghtResult_ocf, .ageResult_ocf, .id_ocf{
+
+.textOfFields, .unitsOfMeasure_ocf, .weightResult, .heightResult, .ageResult, .id{
     font-family: 'ABeeZee';
     font-style: normal;
     font-weight: 400;
@@ -281,57 +283,59 @@
     border-radius: 0 0 0 16px;
 }
 
-.photoHolder_po{
+.photoHolder{
+    margin: 10px auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 184.5px;
     height: 195px;
-    margin: auto;
+    /*left: 83.03px;*/
+    /*top: 27.01px;*/
     /* background-color: aqua; */
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
 }
 
-.pointe_po{
+.pointer{
     position: absolute;
     width: 48px;
     height: 39px;
 }
 
-.upper_po{
+.upper{
     top: 0;
 }
 
-.bottom_po{
+.bottom{
     top: 160px;
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.side_po{
+.side{
     width: 30px;
     height: 30px;
 }
 
-.leftTop_po{
+.leftTop{
     left: 0;
     top: 25%
 }
 
-.leftBottom_po{
+.leftBottom{
     left: 0;
     bottom: 20%;
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.rightTop_po{
+.rightTop{
     right: 0;
     top: 25%;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.rightBottom_po{
+.rightBottom{
     right: 0;
     bottom: 20%;
     transform: rotate(-180deg);
@@ -345,7 +349,7 @@
     /* background-color: aqua; */
 }
 
-.infoPartHolder_ocb{
+.infoPartHolder_{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -360,7 +364,7 @@
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.textOfnameHolder_ocb{
+.textOfnameHolder_ocf{
     font-family: 'ABeeZee';
     font-style: normal;
     font-weight: 400;
@@ -373,11 +377,11 @@
     color: #FFFFFF;
 }
 
-.postHolder_ocb{
+.postHolder{
     text-align: center;
 }
 
-.post_ocb{
+.post{
     font-family: 'ABeeZee';
     font-style: normal;
     font-weight: 400;
@@ -388,7 +392,7 @@
     color: #FFFFFF;
 }
 
-.devider_ocb{
+.divider{
     width: 238px;
     height: 0px;
     margin-top: 5px;
@@ -397,7 +401,7 @@
     border: 1px solid #E2611D;
 }
 
-.email_ocb{
+.email{
     font-family: 'ABeeZee';
     font-style: normal;
     font-weight: 400;
@@ -408,7 +412,7 @@
     color: #FFFFFF;
 }
 
-.passwordChangerHolder_ocb{
+.passwordChangerHolder{
     margin-top: 15px;
 }
 
@@ -426,11 +430,15 @@
     color: #FFFFFF;
 }
 
-.kivanoHolder_ocb{
-    margin-top: 25px;
+.kivanoHolder{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 7px;
 }
 
-.kivano_ocb{
+.kivano{
     font-family: 'ABeeZee';
     font-style: normal;
     font-weight: 700;
@@ -501,4 +509,8 @@
     margin-top: 135px;
     padding: 20px;
     text-align: center;
+}
+
+.userCardInCabAdopt {
+    top: 0 !important
 }

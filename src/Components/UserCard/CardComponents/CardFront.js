@@ -12,10 +12,10 @@ import { connect } from 'react-redux';
 
 const CardFront = ({ id, name, surname, role, age, height, weight, avatar }) => {
   return (
-    <div className="front_Cab">
-      <img className="curveOne_ocf" src={CurveOne} />
+    <div className="front_ocfc">
+      <img className="curveOne_ocb" src={CurveOne} />
       <PhotoPart avatar={avatar} />
-      <img className="curveTwo_ocf" src={CurveTwo} />
+      <img className="curveTwo_ocb" src={CurveTwo} />
       <FrontInfoHolder
         id={id}
         name={name}
@@ -25,7 +25,7 @@ const CardFront = ({ id, name, surname, role, age, height, weight, avatar }) => 
         height={height}
         weight={weight}
       />
-      <img className="curveThree_ocf" src={CurveThree} />
+      <img className="curveThree_ocb" src={CurveThree} />
     </div>
   );
 };

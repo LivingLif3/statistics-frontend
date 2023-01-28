@@ -2,8 +2,8 @@ import React from 'react';
 
 const RoleHolder = ({ role }) => {
   return (
-    <div className="postHolder_ocb">
-      <span className="post_ocb">{role === 'TRAINER' ? 'Тренер' : 'Игрок'}</span>
+    <div className="postHolder_ocf">
+      <span className="post_ocf">{role === 'TRAINER1' ? 'Тренер' : 'Игрок'}</span>
     </div>
   );
 };

@@ -7,7 +7,20 @@ import UserCardForTeam from '../UserCard/UserCardForTeam';
 import ModalWithCard from '../../Pages/MyTeam/ModalWithCard/ModalWithCard';
 
 const SearchResultBar = React.memo(
-  ({ img, name, surname, age, id, pushPlayer, pushTrainer, teamId, role, height, weight }) => {
+  ({
+    img,
+    name,
+    surname,
+    age,
+    id,
+    pushPlayer,
+    pushTrainer,
+    teamId,
+    role,
+    height,
+    weight,
+    roleMain,
+  }) => {
     let [active, setActive] = useState(false);
     let [activeCard, setActiveCard] = useState(false);
     let onPushPlayer = () => {
@@ -43,9 +56,11 @@ const SearchResultBar = React.memo(
           <button className="button_s" onClick={() => setActiveCard(true)}>
             Карта
           </button>
-          <button className="button_s" onClick={() => setActive(true)}>
-            {/* {pushPlayer(id, teamId)} */}В команду
-          </button>
+          {roleMain !== 'USER' && (
+            <button className="button_s" onClick={() => setActive(true)}>
+              {/* {pushPlayer(id, teamId)} */}В команду
+            </button>
+          )}
         </div>
         <Modal active={active} setActive={setActive}>
           <p className="modalText" style={{ color: 'black' }}>

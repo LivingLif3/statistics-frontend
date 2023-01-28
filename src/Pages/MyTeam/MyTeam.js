@@ -30,6 +30,7 @@ const MyTeam = ({ users, pushPlayer, team, role, pushTrainer }) => {
               role={user.role}
               height={user.height}
               weight={user.weight}
+              roleMain={role}
             />
           ))}
         {!usersFiltered || (usersFiltered.length === 0 && <SearchPagePlug />)}

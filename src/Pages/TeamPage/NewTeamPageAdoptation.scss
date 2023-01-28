@@ -30,7 +30,7 @@
         width: 55px
     }
 
-    .photoHolder_po{
+    .photoHolder{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -49,7 +49,7 @@
         font-size: 16px;
     }
 
-    .devider_ocb{
+    .divider{
         margin-bottom: 10px;
     }
 
@@ -60,7 +60,7 @@
 
     .myTeamCurveThree{
         transform: scale(.8);
-        bottom: -45px;
+        bottom: -50px;
         left: -12px
     }
 
@@ -99,7 +99,15 @@
     }
 
     .container_nature{
-        padding-bottom: 30px;
+        padding-bottom: 10px;
+    }
+
+    .container_nature .card_test{
+        min-width: 290px;
+    }
+
+    .container_nature .card_test:not(:first-child){
+        margin-left: -122px;
     }
 }
 
@@ -139,6 +147,18 @@
 
     .textOfTheSecondGroup_mt{
         font-size: 20px
+    }
+
+    .container_nature .card_test{
+        min-width: 204px;
+    }
+
+    .container_nature .card_test:not(:first-child){
+        margin-left: -62px;
+    }
+
+    .playersDeckHolder .playersDeck{
+        height: 56vw;
     }
 }
 
@@ -191,7 +211,50 @@
         margin-left: -68px
     }
 
+    .playersDeckHolder .playersDeck{
+        height: 103vw;
+    }
 
+    .deckTop .nameOfTheDeck span{
+        font-size: 20px;
+    }
+
+    .deckTop .nameOfTheDeck{
+        width: 40vw;
+    }
+
+    .deckTop .buttonSwitcher{
+        padding: 0 10px;
+    }
+
+    .upperHolder .teamNameHolder span{
+        font-size: 30px;
+    }
+
+    .divider_nmtp{
+        width: 25vw;
+    }
+
+    .container_nature{
+        width: 66vw;
+    }
+
+    .playersDeckHolder .playersDeck{
+        height: 56vw;
+    }
+
+}
+
+@media only screen and (max-width: 694px){
+    .playersDeckHolder .playersDeck{
+        height: 71vw;
+    }
+}
+
+@media only screen and (max-width: 563px){
+    .playersDeckHolder .playersDeck{
+        height: 71vw;
+    }
 }
 
 @media only screen and (max-width: 480px){
@@ -211,5 +274,24 @@
         font-size: 11px;
     }
 
+    .body_nm{
+        padding: 0 18px;
+    }
+
+    .container_nature{
+       width: 78vw;
+    }
+
+    .deckTop .nameOfTheDeck span{
+        font-size: 15px;
+    }
+
+    .upperHolder .teamNameHolder span{
+        font-size: 22px;
+    }
+
+    .playersDeckHolder .playersDeck{
+        height: 123vw;
+    }
 
 }

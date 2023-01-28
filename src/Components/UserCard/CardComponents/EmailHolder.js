@@ -2,8 +2,8 @@ import React from 'react';
 
 const EmailHolder = ({ email }) => {
   return (
-    <div className="emailHolde_ocb">
-      <span className="email_ocb">{email}</span>
+    <div className="emailHolde_ocf">
+      <span className="email_ocf">{email}</span>
     </div>
   );
 };

@@ -3,8 +3,8 @@ import CurveOne from './imagesForCard/CurveOne.png';
 import CurveTwo from './imagesForCard/CurveTwo.png';
 import CurveThree from './imagesForCard/CurveThree.png';
 import { DeleteOutlined } from '@ant-design/icons';
-import './UserCardForTeam.css';
-import './UserCard.css';
+import './UserCardForTeam.scss';
+import './UserCardNew.css';
 
 import PhotoPart from './CardComponents/PhotoPart';
 // import OriginalBackInfoHolder from './originalCardComponents/backInfoHolder';
@@ -26,6 +26,7 @@ const UserCardForTeam = React.memo(
     myRole,
     onDelete,
     setDeletedPlayerId,
+    mainTrainer,
   }) => {
     console.log('load');
     let onDeletePlayer = () => {
@@ -37,11 +38,17 @@ const UserCardForTeam = React.memo(
         <div className="front_ocfmt">
           <img className="curveOne_ocb" src={CurveOne} draggable={false} />
           <div
-            className={myRole === 'TRAINER1' ? `deliteHolder_ocfmt` : 'delete_none'}
+            className={
+              myRole === 'TRAINER1' && mainTrainer.toString() !== id
+                ? `deliteHolder_ocfmt`
+                : 'delete_none'
+            }
             onClick={onDeletePlayer}>
             {deletePlayer && <DeleteOutlined />}
           </div>
-          <PhotoPart avatar={avatar} />
+          <div className="wrapper_ocfmt">
+            <PhotoPart avatar={avatar} />
+          </div>
           <img className="curveTwo_ocb" src={CurveTwo} draggable={false} />
           <OriginalFrontInfoHolder
             id={id}
@@ -52,7 +59,7 @@ const UserCardForTeam = React.memo(
             height={height}
             weight={weight}
           />
-          <img className="curveThree_ocb" src={CurveThree} draggable={false} />
+          <img className="curveThree_ocb myTeamCurveThree" src={CurveThree} draggable={false} />
         </div>
       </div>
     );

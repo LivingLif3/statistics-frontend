@@ -35,15 +35,15 @@ const NewTeamPage = ({
 }) => {
   let navigator = useNavigate();
   let [modalActive, setModalActive] = useState(false);
-  let [deleteModal, setDeleteModal] = useState(false);
   let [rotateDeck, setRotateDeck] = useState(false);
   let [deletedPlayerId, setDeletedPlayerId] = useState(null);
   useEffect(() => {
-    if (role === 'USER') {
-      getTeamForUser();
-    } else {
-      getTeam();
-    }
+    // if (role === 'USER') {
+    //   getTeamForUser();
+    // } else {
+    //   getTeam();
+    // }
+    getTeamForUser();
 
     if (!userTeam && role === 'USER') {
       navigator(MAIN_ROUTE);
@@ -67,7 +67,7 @@ const NewTeamPage = ({
   return (
     <div className="page_nmtp">
       <NavBar role={role} />
-      {!team ? (
+      {!team && role !== 'USER' ? (
         <NoTeamCreated createTeam={createTeam} />
       ) : (
         <div className="body_nm">
@@ -110,6 +110,7 @@ const NewTeamPage = ({
                                 teamId={trainer.team}
                                 myRole={role}
                                 onDelete={onDelete}
+                                mainTrainer={team.mainTrainer}
                               />
                             </div>
                           ))
@@ -147,6 +148,7 @@ const NewTeamPage = ({
                                 teamId={team._id}
                                 myRole={role}
                                 onDelete={onDelete}
+                                mainTrainer={team.mainTrainer}
                               />
                             </div>
                           ))

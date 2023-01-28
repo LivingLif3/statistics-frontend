@@ -9,7 +9,7 @@ import WeightHolder from './WeightHolder';
 
 const FrontInfoHolder = ({ id, name, surname, role, age, height, weight }) => {
   return (
-    <div className="infoPartHolder_ocf">
+    <div className="infoPartHolder myTeamInfoPartHolder_ocf">
       <PersonalInfo name={name} surname={surname} />
       <RoleHolder role={role} />
       <Devider />

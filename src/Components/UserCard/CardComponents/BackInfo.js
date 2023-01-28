@@ -7,7 +7,7 @@ import RoleHolder from './RoleHolder';
 
 const OriginalBackInfoHolder = ({ email, role }) => {
   return (
-    <div className="infoPartHolder_ocb">
+    <div className="infoPartHolder_">
       <PersonalInfo />
       <RoleHolder role={role} />
       <Devider />

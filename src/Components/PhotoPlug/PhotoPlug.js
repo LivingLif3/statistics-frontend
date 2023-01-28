@@ -4,7 +4,7 @@ import './PhotoPlug.css';
 
 const PhotoPlug = () => {
   return (
-    <div className="plug_ptp">
+    <div className="plug">
       <SmileFilled />
     </div>
   );
