@@ -130,6 +130,10 @@ export const setUserData = (email, password) => async (dispatch) => {
   }
 };
 
+export const setSocketData = (data) => async (dispatch) => {
+  dispatch(getUserDataAC(data));
+};
+
 export const checkAuth = () => (dispatch) => {
   try {
     axios.get(`${API_URL}/refresh`, { withCredentials: true }).then(({ data }) => {

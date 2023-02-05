@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import NavBar from '../../Components/NavBar/NavBar';
 import { SolutionOutlined } from '@ant-design/icons';
 import { TeamOutlined } from '@ant-design/icons';
@@ -18,6 +18,7 @@ import { MAIN_ROUTE } from '../../utils/consts';
 import { getTeamPlayers } from '../../redux-store/QuizReducer';
 import NoTeamCreated from '../../Components/NoTeamCreated/NoTeamCreated';
 import Modal from '../../Components/Modal/Modal';
+import ShowPlayersCards from '../../Components/ShowPlayersCards/ShowPlayersCards';
 
 const NewTeamPage = ({
   createTeam,
@@ -31,7 +32,7 @@ const NewTeamPage = ({
   getTeamPlayers,
   getTeamTrainers,
   getTeamForUser,
-  teamId,
+  id,
 }) => {
   let navigator = useNavigate();
   let [modalActive, setModalActive] = useState(false);
@@ -49,6 +50,11 @@ const NewTeamPage = ({
       navigator(MAIN_ROUTE);
     }
   }, []);
+
+  if (!userTeam && role === 'USER') {
+    navigator(MAIN_ROUTE);
+  }
+
   useEffect(() => {
     console.log(team, 'team');
     if (team) {
@@ -56,6 +62,7 @@ const NewTeamPage = ({
       getTeamPlayers(team._id);
     }
   }, [team]);
+
   let onDelete = (id) => {
     setModalActive(true);
     setDeletedPlayerId(id);
@@ -93,28 +100,13 @@ const NewTeamPage = ({
                 <div className="deckCardHolder">
                   <div className="wrapper_nmt">
                     <div className="container_nature">
-                      {players
-                        ? players.map((trainer) => (
-                            <div className="card_test">
-                              <UserCardForTeam
-                                key={trainer._id}
-                                id={trainer._id}
-                                img={trainer.img}
-                                name={trainer.name}
-                                surname={trainer.surname}
-                                role={trainer.role}
-                                age={trainer.age}
-                                height={trainer.height}
-                                weight={trainer.weight}
-                                deletePlayer={deletePlayer}
-                                teamId={trainer.team}
-                                myRole={role}
-                                onDelete={onDelete}
-                                mainTrainer={team.mainTrainer}
-                              />
-                            </div>
-                          ))
-                        : 'Пусто'}
+                      <ShowPlayersCards
+                        players={players}
+                        team={team}
+                        onDelete={onDelete}
+                        role={role}
+                        deletePlayer={deletePlayer}
+                      />
                     </div>
                   </div>
                 </div>
@@ -131,28 +123,13 @@ const NewTeamPage = ({
                 <div className="deckCardHolder">
                   <div className="wrapper_nmt">
                     <div className="container_nature">
-                      {trainers
-                        ? trainers.map((trainer) => (
-                            <div className="card_test">
-                              <UserCardForTeam
-                                key={trainer._id}
-                                id={trainer._id}
-                                img={trainer.img}
-                                name={trainer.name}
-                                surname={trainer.surname}
-                                role={trainer.role}
-                                age={trainer.age}
-                                height={trainer.height}
-                                weight={trainer.weight}
-                                deletePlayer={deletePlayer}
-                                teamId={team._id}
-                                myRole={role}
-                                onDelete={onDelete}
-                                mainTrainer={team.mainTrainer}
-                              />
-                            </div>
-                          ))
-                        : 'Пусто'}
+                      <ShowPlayersCards
+                        players={trainers}
+                        team={team}
+                        onDelete={onDelete}
+                        role={role}
+                        deletePlayer={deletePlayer}
+                      />
                       {/* <div className="card_test">
                       <UserCardForTeam />
                     </div>
@@ -209,6 +186,7 @@ let mapStateToProps = (state) => ({
   trainers: state.teamReducer.trainers,
   userTeam: state.userReducer.team,
   players: state.quizReducer.teamPlayers,
+  id: state.userReducer.id,
 });
 
 export default connect(mapStateToProps, {

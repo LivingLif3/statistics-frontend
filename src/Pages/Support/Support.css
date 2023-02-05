@@ -264,7 +264,7 @@ body{
     text-align: center;
 }
 
-.bottom{
+.bottom_support{
     display: flex;
     justify-content: space-between;
     width: 100%;

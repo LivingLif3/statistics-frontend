@@ -244,7 +244,7 @@ const Support = () => {
               сотрудники службы поддержки с удовольствием ответят на все Ваши вопросы{' '}
             </p>
           </div>
-          <div className="bottom">
+          <div className="bottom_support">
             <div className="info">
               <h2 className="infoText">Поддержка</h2>
               <h2 className="infoText s2">kivanosup@gmail.com</h2>

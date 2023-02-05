@@ -32,6 +32,10 @@
     transition: color .1s  linear;
 }
 
+.nav_onb:hover {
+    cursor: pointer
+}
+
 .nav_onb::after{
     content: "";
     display: block;

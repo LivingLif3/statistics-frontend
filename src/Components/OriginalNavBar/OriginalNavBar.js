@@ -13,7 +13,7 @@ import {
   TEAM_ROUTE,
 } from '../../utils/consts';
 
-const OriginalNavBar = ({ isAuth }) => {
+const OriginalNavBar = ({ isAuth, team }) => {
   let navigator = useNavigate();
   return (
     <div className="header_onb">
@@ -21,7 +21,11 @@ const OriginalNavBar = ({ isAuth }) => {
         <div className="nav_onb" onClick={() => navigator(MAIN_ROUTE)}>
           Главная
         </div>
-        <div className="nav_onb" onClick={() => navigator(TEAM_ROUTE)}>
+        <div
+          className="nav_onb"
+          onClick={() => {
+            team ? navigator(TEAM_ROUTE) : navigator(MAIN_ROUTE);
+          }}>
           Команда
         </div>
         <div
@@ -47,6 +51,7 @@ const OriginalNavBar = ({ isAuth }) => {
 
 let mapStateToProps = (state) => ({
   isAuth: state.userReducer.isAuth,
+  team: state.userReducer.team,
 });
 
 export default connect(mapStateToProps, {})(OriginalNavBar);

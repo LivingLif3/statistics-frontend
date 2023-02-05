@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Main.css';
 import './MainAdoptation.css';
 import { InstagramFilled } from '@ant-design/icons';
@@ -7,8 +7,7 @@ import NavBar from '../../Components/NavBar/NavBar';
 import { connect } from 'react-redux';
 import OriginalNavBar from '../../Components/OriginalNavBar/OriginalNavBar';
 
-const Main = ({ role }) => {
-  <script src="https://kit.fontawesome.com/23d07f4815.js" crossorigin="anonymous"></script>;
+const Main = React.memo(({ role }) => {
   return (
     <div className="page_ma">
       <section className="section_ma">
@@ -136,7 +135,7 @@ const Main = ({ role }) => {
       </div>
     </div>
   );
-};
+});
 
 let mapStateToProps = (state) => ({
   role: state.userReducer.role,

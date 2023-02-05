@@ -24,6 +24,7 @@ import { CREATE_QUIZ_ROUTE, TEAM_ROUTE } from '../../utils/consts';
 import { getAvailableInfo, getQuizTemplates, getTeamPlayers } from '../../redux-store/QuizReducer';
 import SmallTeamBar from '../../Components/SmallTeamBar/SmallTeamBar';
 import RepeatCheckBox from '../../Components/RepeatCheckbox/RepeatCheckBox';
+import { getTeamTrainers } from '../../redux-store/TeamReducer';
 // import SmallTeamBar from './smallTeamBar';
 
 SwiperCore.use([Navigation, Autoplay]);
@@ -37,6 +38,7 @@ const NewSendQuiz = ({
   trainers,
   getAvailableInfo,
   availableInfo,
+  getTeamTrainers,
 }) => {
   const users = [];
   const templates = [];
@@ -47,6 +49,7 @@ const NewSendQuiz = ({
   useEffect(() => {
     getQuizTemplates();
     getTeamPlayers(team);
+    getTeamTrainers(team);
     getAvailableInfo();
   }, []);
   let onSendChosenPlayers = async () => {
@@ -193,6 +196,9 @@ let mapStateToProps = (state) => ({
   availableInfo: state.quizReducer.availableObject,
 });
 
-export default connect(mapStateToProps, { getQuizTemplates, getTeamPlayers, getAvailableInfo })(
-  NewSendQuiz,
-);
+export default connect(mapStateToProps, {
+  getQuizTemplates,
+  getTeamPlayers,
+  getAvailableInfo,
+  getTeamTrainers,
+})(NewSendQuiz);
